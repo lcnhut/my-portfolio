@@ -499,6 +499,7 @@ main .sections .section {
   color: #fff;
   font-size: 4.8em;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .skills__description {
@@ -542,4 +543,92 @@ main .sections .section {
   height: 8rem;
   margin-right: 2rem;
   margin-bottom: 2rem;
+}
+
+.works {
+  width: 1234px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works__title {
+  width: 52rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.works__title h1 {
+  color: #fff;
+  font-size: 4.8em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.works__menu {
+  margin-bottom: 3rem;
+}
+
+.works__menu .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works__menu .list__item {
+  font-weight: 600;
+  font-size: 1.6em;
+  color: #fff;
+  margin-right: 2rem;
+  padding: 0.7rem 2rem;
+}
+
+.works__menu .list__item.active {
+  border-radius: 5px;
+  background-color: #ff6b00;
+  color: #2f445d;
+  -webkit-transition: background-color linear 0.2s, color linear 0.2s;
+  transition: background-color linear 0.2s, color linear 0.2s;
+}
+
+.works__menu .list__item:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ff6b00;
+  color: #2f445d;
+  -webkit-transition: background-color linear 0.2s, color linear 0.2s;
+  transition: background-color linear 0.2s, color linear 0.2s;
+}
+
+.works__imgs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works__imgs .item__top {
+  margin-bottom: 3rem;
 }
