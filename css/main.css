@@ -98,12 +98,12 @@ div[class^="col-"] {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
-  padding: 1rem 2rem;
   background-color: #212529;
 }
 
@@ -258,7 +258,7 @@ header .navbar__button {
 }
 
 main {
-  margin-top: 7em;
+  margin: 7em 0;
 }
 
 main .sections {
@@ -727,4 +727,30 @@ main .sections .section {
 
 .testimonials__quotes .quote__item .bottom__infor p {
   font-size: 1.6em;
+}
+
+footer {
+  width: 100%;
+  height: 15rem;
+  background-color: #1C1C1C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p, footer i {
+  color: #fff;
+  font-size: 2.2em;
+  margin-left: 0.5rem;
+}
+
+footer span {
+  color: #ff6b00;
+  font-weight: bold;
 }

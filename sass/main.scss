@@ -11,13 +11,13 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    padding: 1rem 2rem;
     background-color: $dark__grey;
 }
 
@@ -62,3 +62,4 @@ body {
 
 @import "./header";
 @import "./content";
+@import "./footer";
