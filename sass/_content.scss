@@ -1,0 +1,16 @@
+main {
+    margin-top: 7em;
+
+    .sections {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .section {
+            margin: 10rem 0;
+        }
+    }
+}
+
+
+@import "./hero"

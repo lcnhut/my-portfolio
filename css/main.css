@@ -102,6 +102,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
   padding: 1rem 2rem;
   background-color: #212529;
 }
@@ -113,10 +114,19 @@ header {
   top: 0;
   right: 0;
   width: 100%;
+  height: 7rem;
+  display: block;
 }
 
-.navbar {
-  font-size: 1.8rem;
+header .container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+header .navbar {
+  height: 100%;
   font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,10 +137,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em;
+  padding: 1rem;
 }
 
-.navbar__logo {
+header .navbar__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +149,7 @@ header {
           justify-content: flex-start;
 }
 
-.navbar__menu {
+header .navbar__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,19 +159,20 @@ header {
   list-style-type: none;
 }
 
-.navbar__item {
-  margin-right: 2em;
+header .navbar__item {
+  margin-right: 2rem;
 }
 
-.navbar__item a {
+header .navbar__item a {
+  font-size: 1.8em;
   text-decoration: none;
   color: #fff;
   text-transform: capitalize;
   position: relative;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.05em;
 }
 
-.navbar__item a::after {
+header .navbar__item a::after {
   position: absolute;
   opacity: 0;
   background: #ff6b00;
@@ -176,23 +187,23 @@ header {
   transition: 0.3s;
 }
 
-.navbar__item a:hover::after {
+header .navbar__item a:hover::after {
   width: 100%;
   opacity: 1;
   -webkit-transition: opacity linear 0.3, width linear 0.3s;
   transition: opacity linear 0.3, width linear 0.3s;
 }
 
-.navbar__item a:active {
+header .navbar__item a:active {
   color: #ff6b00;
 }
 
-.navbar__item a:active::after {
+header .navbar__item a:active::after {
   width: 100%;
   opacity: 1;
 }
 
-.navbar__button {
+header .navbar__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,17 +212,17 @@ header {
           justify-content: flex-end;
 }
 
-.navbar__button button {
+header .navbar__button button {
   text-transform: capitalize;
   font-size: 1.8rem;
   font-weight: bold;
   color: #2f445d;
-  padding: 0.6em 1.3em;
+  padding: 1.2rem 2rem;
   border-radius: 50px;
   background-color: #ff6b00;
 }
 
-.navbar__button button:hover {
+header .navbar__button button:hover {
   cursor: pointer;
   background-color: #ff6a00d5;
   color: #fff;
@@ -221,4 +232,180 @@ header {
   transition: color linear 0.2s, background-color linear 0.2s, -webkit-transform linear 0.2s;
   transition: color linear 0.2s, transform linear 0.2s, background-color linear 0.2s;
   transition: color linear 0.2s, transform linear 0.2s, background-color linear 0.2s, -webkit-transform linear 0.2s;
+}
+
+main {
+  margin-top: 7em;
+}
+
+main .sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .sections .section {
+  margin: 10rem 0;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.hero__content h3 {
+  font-weight: bold;
+  font-size: 3.2em;
+}
+
+.hero__content h3 u {
+  color: #ff6b00;
+}
+
+.hero__content h1 {
+  margin: 2rem 0;
+  font-weight: bold;
+  font-size: 4.8em;
+}
+
+.hero__content p {
+  margin: 2rem;
+  font-weight: normal;
+  font-size: 2.4em;
+}
+
+.hero__image {
+  margin-top: 5rem;
+}
+
+.hero__image img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.hero__bottom {
+  margin-top: 13.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__bottom .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 41.6rem;
+  height: 12rem;
+  background-color: #292B2E;
+  margin-right: 2rem;
+  border-radius: 10px;
+}
+
+.hero__bottom .item__icon {
+  width: 50px;
+  height: 50px;
+  color: #ff6b00;
+  font-size: 4rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+}
+
+.hero__bottom .item__icon i {
+  color: #ff6b00;
+  font-size: 4rem;
+}
+
+.hero__bottom .item__content {
+  width: 16rem;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__bottom .item__content h1 {
+  font-size: 3.2em;
+  color: #ff6b00;
+}
+
+.hero__bottom .item__content p {
+  font-size: 1.6em;
+  line-height: 1.6;
+  color: #fff;
 }

@@ -1,0 +1,106 @@
+.hero {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        text-transform: capitalize;
+
+        h3 {
+            font-weight: bold;
+            font-size: 3.2em;
+    
+            u {
+                color: $primary__color;
+            
+            }
+        }
+    
+        h1 {
+            margin: 2rem 0;
+            font-weight: bold;
+            font-size: 4.8em;
+        }
+        
+        p {
+            margin: 2rem;
+            font-weight: normal;
+            font-size: 2.4em;
+        }
+    }
+
+    &__image {
+        margin-top: 5rem;
+
+        img {
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+        }
+    }
+
+    &__bottom {
+        margin-top: 13.6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 41.6rem;
+            height: 12rem;
+            background-color: #292B2E;
+            margin-right: 2rem;
+            border-radius: 10px;
+
+            &__icon {
+                width: 50px;
+                height: 50px;
+                color: $primary__color;
+                font-size: 4rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+
+                i {
+                    color: $primary__color;
+                    font-size: 4rem;
+                }
+            }
+
+
+            &__content {
+                width: 16rem;
+                height: 7rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    font-size: 3.2em;
+                    color: $primary__color;
+                }
+
+                p {
+                    font-size: 1.6em;
+                    line-height: 1.6;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
