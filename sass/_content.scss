@@ -2,15 +2,20 @@ main {
     margin-top: 7em;
 
     .sections {
+        width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
 
         .section {
-            margin: 10rem 0;
+            width: 100%;
+            max-width: 1320px;
+            height: 100%;
+            margin: 10rem auto 0 auto;
         }
     }
 }
 
 
-@import "./hero"
+@import "./hero";
+@import "./about";

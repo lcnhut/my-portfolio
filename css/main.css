@@ -107,6 +107,28 @@ body {
   background-color: #212529;
 }
 
+.button--primary {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2f445d;
+  padding: 1.2rem 2rem;
+  border-radius: 50px;
+  background-color: #ff6b00;
+}
+
+.button--primary:hover {
+  cursor: pointer;
+  background-color: #ff6a00d5;
+  color: #fff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: color linear 0.2s, background-color linear 0.2s, -webkit-transform linear 0.2s;
+  transition: color linear 0.2s, background-color linear 0.2s, -webkit-transform linear 0.2s;
+  transition: color linear 0.2s, transform linear 0.2s, background-color linear 0.2s;
+  transition: color linear 0.2s, transform linear 0.2s, background-color linear 0.2s, -webkit-transform linear 0.2s;
+}
+
 header {
   overflow: hidden;
   background-color: #333;
@@ -160,7 +182,7 @@ header .navbar__menu {
 }
 
 header .navbar__item {
-  margin-right: 2rem;
+  margin-right: 6rem;
 }
 
 header .navbar__item a {
@@ -212,47 +234,29 @@ header .navbar__button {
           justify-content: flex-end;
 }
 
-header .navbar__button button {
-  text-transform: capitalize;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #2f445d;
-  padding: 1.2rem 2rem;
-  border-radius: 50px;
-  background-color: #ff6b00;
-}
-
-header .navbar__button button:hover {
-  cursor: pointer;
-  background-color: #ff6a00d5;
-  color: #fff;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: color linear 0.2s, background-color linear 0.2s, -webkit-transform linear 0.2s;
-  transition: color linear 0.2s, background-color linear 0.2s, -webkit-transform linear 0.2s;
-  transition: color linear 0.2s, transform linear 0.2s, background-color linear 0.2s;
-  transition: color linear 0.2s, transform linear 0.2s, background-color linear 0.2s, -webkit-transform linear 0.2s;
-}
-
 main {
   margin-top: 7em;
 }
 
 main .sections {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 main .sections .section {
-  margin: 10rem 0;
+  width: 100%;
+  max-width: 1320px;
+  height: 100%;
+  margin: 10rem auto 0 auto;
 }
 
 .hero {
@@ -408,4 +412,68 @@ main .sections .section {
   font-size: 1.6em;
   line-height: 1.6;
   color: #fff;
+}
+
+.about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__img {
+  width: 62rem;
+  height: 60rem;
+  margin-right: 4rem;
+}
+
+.about__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.about__content__top {
+  width: 14.8rem;
+  height: 4.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+}
+
+.about__content__top h3 {
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ff6b00;
+}
+
+.about__content h1 {
+  color: #fff;
+  font-size: 4.8em;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.about__content p {
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.6em;
+}
+
+.about__content__button {
+  margin-top: 5.5rem;
 }

@@ -21,5 +21,26 @@ body {
     background-color: $dark__grey;
 }
 
+
+.button--primary {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $text__color;
+    padding: 1.2rem 2rem;
+    border-radius: 50px;
+    background-color: $primary__color
+};
+
+.button--primary:hover {
+    cursor: pointer;
+    background-color: $hover__color;
+    color: $white;
+    transform: scale(1.05);
+    transition: color linear 0.2s, transform linear 0.2s, background-color linear 0.2s;
+}
+
+
+
 @import "./header";
 @import "./content";
