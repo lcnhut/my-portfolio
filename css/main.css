@@ -129,6 +129,29 @@ body {
   transition: color linear 0.2s, transform linear 0.2s, background-color linear 0.2s, -webkit-transform linear 0.2s;
 }
 
+.label--primary {
+  width: 14.8rem;
+  height: 4.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+}
+
+.label--primary h3 {
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ff6b00;
+}
+
 header {
   overflow: hidden;
   background-color: #333;
@@ -438,29 +461,6 @@ main .sections .section {
   height: 100%;
 }
 
-.about__content__top {
-  width: 14.8rem;
-  height: 4.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-}
-
-.about__content__top h3 {
-  font-size: 2em;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #ff6b00;
-}
-
 .about__content h1 {
   color: #fff;
   font-size: 4.8em;
@@ -476,4 +476,70 @@ main .sections .section {
 
 .about__content__button {
   margin-top: 5.5rem;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills__title {
+  width: 52rem;
+  margin-bottom: 3rem;
+}
+
+.skills__title h1 {
+  color: #fff;
+  font-size: 4.8em;
+  font-weight: bold;
+}
+
+.skills__description {
+  width: 67rem;
+}
+
+.skills__description p {
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.6em;
+}
+
+.skills__button {
+  margin-top: 5.5rem;
+}
+
+.skills__img__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills__img__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  background-color: #383E45;
+  width: 8rem;
+  height: 8rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }

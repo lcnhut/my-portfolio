@@ -16,24 +16,6 @@
     }
 
     &__content {
-
-        &__top {
-            width: 14.8rem;
-            height: 4.2rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 20px;
-
-            h3 {
-                font-size: 2em;
-                font-weight: 600;
-                text-transform: uppercase;
-                color: $primary__color;
-            }
-        }
-
         h1 {
             color: $white;
             font-size: 4.8em;

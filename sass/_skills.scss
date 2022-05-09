@@ -1,0 +1,54 @@
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__content {
+    }
+
+    &__title {
+        width: 52rem;
+        margin-bottom: 3rem;
+        
+        h1 {
+            color: $white;
+            font-size: 4.8em;
+            font-weight: bold;
+        }
+    }
+
+    &__description {
+        width: 67rem;
+        p {
+            color: $white;
+            font-weight: normal;
+            font-size: 1.6em;
+        }   
+    }
+
+    &__button {
+        margin-top: 5.5rem;
+    }
+
+    &__img {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    
+        &__item {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: #383E45;
+            width: 8rem;
+            height: 8rem;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+}
