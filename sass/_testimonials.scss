@@ -1,0 +1,11 @@
+.testimonials {
+    width: 1234px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__header {
+        width: 19.2rem;
+    }
+}

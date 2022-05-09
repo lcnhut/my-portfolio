@@ -130,7 +130,7 @@ body {
 }
 
 .label--primary {
-  width: 14.8rem;
+  width: 100%;
   height: 4.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -461,6 +461,10 @@ main .sections .section {
   height: 100%;
 }
 
+.about__content__header {
+  width: 14.8rem;
+}
+
 .about__content h1 {
   color: #fff;
   font-size: 4.8em;
@@ -488,6 +492,10 @@ main .sections .section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.skills__header {
+  width: 14.8rem;
 }
 
 .skills__title {
@@ -562,6 +570,10 @@ main .sections .section {
           align-items: center;
 }
 
+.works__header {
+  width: 14.8rem;
+}
+
 .works__title {
   width: 52rem;
   margin-bottom: 3rem;
@@ -631,4 +643,25 @@ main .sections .section {
 
 .works__imgs .item__top {
   margin-bottom: 3rem;
+}
+
+.testimonials {
+  width: 1234px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials__header {
+  width: 19.2rem;
 }
