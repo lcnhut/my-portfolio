@@ -8,4 +8,60 @@
     &__header {
         width: 19.2rem;
     }
+
+    &__title {
+        h1 {
+            color: $white;
+            font-size: 4.8em;
+            font-weight: bold;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__quotes {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .quote__item {
+            height: 45rem;
+            background-color: $white;
+            border-radius: 10px;
+            padding: 5rem 2.5rem;
+            color: $text__color;
+            font-weight: normal;
+
+            .description {
+                p {
+                    font-size: 2em;
+                    font-style: italic;
+                }
+            }
+
+            .bottom {
+                height: 10rem;
+                display:flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                img {
+                    width: 7.2rem;
+                    height: 7.2rem;
+                    margin-right: 2rem;
+                }
+
+                &__infor {
+                    color: #000;
+
+                    h3 {
+                        font-size: 2em;
+                    }
+
+                    p {
+                        font-size: 1.6em;
+                    }
+                }
+            }
+        }
+    }
 }

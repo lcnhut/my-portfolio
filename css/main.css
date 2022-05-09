@@ -665,3 +665,66 @@ main .sections .section {
 .testimonials__header {
   width: 19.2rem;
 }
+
+.testimonials__title h1 {
+  color: #fff;
+  font-size: 4.8em;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.testimonials__quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials__quotes .quote__item {
+  height: 45rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5rem 2.5rem;
+  color: #2f445d;
+  font-weight: normal;
+}
+
+.testimonials__quotes .quote__item .description p {
+  font-size: 2em;
+  font-style: italic;
+}
+
+.testimonials__quotes .quote__item .bottom {
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials__quotes .quote__item .bottom img {
+  width: 7.2rem;
+  height: 7.2rem;
+  margin-right: 2rem;
+}
+
+.testimonials__quotes .quote__item .bottom__infor {
+  color: #000;
+}
+
+.testimonials__quotes .quote__item .bottom__infor h3 {
+  font-size: 2em;
+}
+
+.testimonials__quotes .quote__item .bottom__infor p {
+  font-size: 1.6em;
+}
