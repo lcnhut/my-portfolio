@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+/* This is for demo purposes only! */
+div[class^="col-"] {
+  background: pink;
+  border: 1px solid red;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col-12 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.col-11 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 11);
+          flex: 0 0 calc(100% / 12 * 11);
+  /* 11/12 */
+}
+
+.col-10 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 10);
+          flex: 0 0 calc(100% / 12 * 10);
+}
+
+.col-9 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 9);
+          flex: 0 0 calc(100% / 12 * 9);
+}
+
+.col-8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 8);
+          flex: 0 0 calc(100% / 12 * 8);
+}
+
+.col-7 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 7);
+          flex: 0 0 calc(100% / 12 * 7);
+}
+
+.col-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 6);
+          flex: 0 0 calc(100% / 12 * 6);
+}
+
+.col-5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 5);
+          flex: 0 0 calc(100% / 12 * 5);
+}
+
+.col-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 4);
+          flex: 0 0 calc(100% / 12 * 4);
+}
+
+.col-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 3);
+          flex: 0 0 calc(100% / 12 * 3);
+}
+
+.col-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 2);
+          flex: 0 0 calc(100% / 12 * 2);
+}
+
+.col-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 1);
+          flex: 0 0 calc(100% / 12 * 1);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem 2rem;
+  background-color: #212529;
+}
+
+header {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.navbar {
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+.navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+.navbar__item {
+  margin-right: 2em;
+}
+
+.navbar__item a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  position: relative;
+  letter-spacing: 0.05rem;
+}
+
+.navbar__item a::after {
+  position: absolute;
+  opacity: 0;
+  background: #ff6b00;
+  width: 0;
+  height: 0.3rem;
+  content: "";
+  z-index: 1;
+  bottom: -0.35rem;
+  left: 0;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar__item a:hover::after {
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: opacity linear 0.3, width linear 0.3s;
+  transition: opacity linear 0.3, width linear 0.3s;
+}
+
+.navbar__item a:active {
+  color: #ff6b00;
+}
+
+.navbar__item a:active::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.navbar__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar__button button {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2f445d;
+  padding: 0.6em 1.3em;
+  border-radius: 50px;
+  background-color: #ff6b00;
+}
+
+.navbar__button button:hover {
+  cursor: pointer;
+  background-color: #ff6a00d5;
+  color: #fff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: color linear 0.2s, background-color linear 0.2s, -webkit-transform linear 0.2s;
+  transition: color linear 0.2s, background-color linear 0.2s, -webkit-transform linear 0.2s;
+  transition: color linear 0.2s, transform linear 0.2s, background-color linear 0.2s;
+  transition: color linear 0.2s, transform linear 0.2s, background-color linear 0.2s, -webkit-transform linear 0.2s;
+}

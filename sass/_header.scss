@@ -1,0 +1,95 @@
+header {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+.navbar {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+    &__logo {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    &__item {
+        margin-right: 2em;
+
+        a {
+            text-decoration: none;
+            color: $white;
+            text-transform: capitalize;
+            position: relative;
+            letter-spacing: 0.05rem;
+        }
+
+        a::after {
+            position: absolute;
+            opacity: 0;
+            background: $primary__color;
+            width: 0;
+            height: 0.3rem;
+            content: "";
+            z-index: 1;
+            bottom: -0.35rem;
+            left: 0;
+            display: block;
+            transition: 0.3s;
+        }
+
+        a:hover::after {
+            width: 100%;
+            opacity: 1;
+            transition: opacity linear 0.3, width linear 0.3s;
+        }
+
+
+        a:active {
+            color: $primary__color;
+
+        }
+
+        a:active::after{
+            width: 100%;
+            opacity: 1;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            text-transform: capitalize;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: $text__color;
+            padding: 0.6em 1.3em;
+            border-radius: 50px;
+            background-color: $primary__color
+        };
+
+        button:hover {
+            cursor: pointer;
+            background-color: $hover__color;
+            color: $white;
+            transform: scale(1.05);
+            transition: color linear 0.2s, transform linear 0.2s, background-color linear 0.2s;
+        }
+    }
+} 

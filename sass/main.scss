@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import "./var";
+@import "./grid";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem 2rem;
+    background-color: $dark__grey;
+}
+
+@import "./header";
