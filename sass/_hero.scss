@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10rem;
 
     &__content {
         display: flex;
@@ -103,7 +104,7 @@
             height: 12rem;
             background-color: #292B2E;
             border-radius: 10px;
-            padding: 0 2rem;
+            padding: 0 1.5rem;
 
             &__icon {
                 width: 6.5rem;

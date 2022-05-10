@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 /* This is for demo purposes only! */
+.grid {
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+
+.grid.wide {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 div[class^="col-"] {
-  background: pink;
-  border: 1px solid red;
   text-align: center;
   padding: 1rem 0;
 }
@@ -112,7 +121,7 @@ body {
   font-size: 1.8rem;
   font-weight: bold;
   color: #2f445d;
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 1.4rem;
   border-radius: 50px;
   background-color: #ff6b00;
 }
@@ -159,15 +168,13 @@ header {
   top: 0;
   right: 0;
   width: 100%;
-  height: 7rem;
+  height: 8rem;
   display: block;
   z-index: 999;
 }
 
 header .container {
   width: 100%;
-  max-width: 1320px;
-  margin: 0 auto;
   height: 100%;
 }
 
@@ -183,7 +190,6 @@ header .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
 }
 
 header .navbar__logo {
@@ -206,7 +212,7 @@ header .navbar__menu {
 }
 
 header .navbar__item {
-  margin-right: 6rem;
+  margin: 0 3rem;
 }
 
 header .navbar__item a {
@@ -249,17 +255,8 @@ header .navbar__item a.active::after {
   opacity: 1;
 }
 
-header .navbar__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
 main {
-  margin: 7em 0;
+  margin: 8em 0;
 }
 
 main .sections {
@@ -271,16 +268,11 @@ main .sections {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  gap: 10rem 0;
 }
 
 main .sections .section {
   width: 100%;
-  max-width: 1320px;
-  height: 100%;
-  margin: 10rem auto 0 auto;
 }
 
 .hero {
@@ -297,6 +289,7 @@ main .sections .section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10rem;
 }
 
 .hero__content {
@@ -424,7 +417,7 @@ main .sections .section {
   height: 12rem;
   background-color: #292B2E;
   border-radius: 10px;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .hero__bottom .item__icon {
@@ -624,7 +617,6 @@ main .sections .section {
 }
 
 .works {
-  width: 1234px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -703,19 +695,17 @@ main .sections .section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.works__imgs .item__top {
-  margin-bottom: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.2rem;
 }
 
 .works__imgs .img__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.2rem;
   position: relative;
   overflow: hidden;
 }
@@ -867,4 +857,26 @@ footer span {
   color: #ff6b00;
   font-weight: bold;
   font-size: 2.5em;
+}
+
+@media only screen and (min-width: 46.1875em) and (max-width: 63.9375em) {
+  .mobile {
+    color: orangered;
+  }
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .tablet {
+    color: red;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .desktop {
+    color: blue;
+  }
+}
+
+.desktop {
+  color: blue;
 }

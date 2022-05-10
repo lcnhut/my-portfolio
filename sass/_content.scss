@@ -1,17 +1,14 @@
 main {
-    margin: 7em 0;
+    margin: 8em 0;
 
     .sections {
         width: 100%;
-        display: flex;
+        display:flex;
         flex-direction: column;
-        justify-content: center;
+        gap: 10rem 0;
 
         .section {
             width: 100%;
-            max-width: 1320px;
-            height: 100%;
-            margin: 10rem auto 0 auto;
         }
     }
 }

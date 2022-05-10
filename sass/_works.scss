@@ -1,5 +1,4 @@
 .works {
-    width: 1234px !important;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -59,15 +58,13 @@
     &__imgs {
         width: 100%;
         display:flex;
-        justify-content: space-between;
-        align-items: center;    
-
-        .item__top {
-            margin-bottom: 3rem;
-        }
+        justify-content: center;
+        gap: 1.2rem;
 
 
         .img__wrapper {
+            display: flex;
+            margin-bottom: 1.2rem;
             position: relative;
             overflow: hidden;
 

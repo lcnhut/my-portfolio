@@ -1,7 +1,16 @@
 /* This is for demo purposes only! */
+.grid {
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+
+.grid.wide {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 div[class^="col-"] {
-    background: pink;
-    border: 1px solid red;
     text-align: center;
     padding: 1rem 0;
   }
