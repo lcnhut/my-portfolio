@@ -391,6 +391,7 @@ main .sections .section {
 }
 
 .hero__bottom {
+  width: 100%;
   margin-top: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -399,12 +400,12 @@ main .sections .section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero__bottom .item {
@@ -420,11 +421,10 @@ main .sections .section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 41.6rem;
   height: 12rem;
   background-color: #292B2E;
-  margin-right: 2rem;
   border-radius: 10px;
+  padding: 0 2rem;
 }
 
 .hero__bottom .item__icon {
@@ -450,7 +450,7 @@ main .sections .section {
 }
 
 .hero__bottom .item__content {
-  width: 16rem;
+  width: 25rem;
   height: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,7 +516,7 @@ main .sections .section {
 }
 
 .about__img {
-  width: 62rem;
+  width: 60rem;
   height: 60rem;
   padding-right: 4rem;
 }
@@ -524,6 +524,7 @@ main .sections .section {
 .about__img img {
   width: 100%;
   height: 100%;
+  border-radius: 5rem;
 }
 
 .about__content__header {
@@ -565,7 +566,7 @@ main .sections .section {
 
 .skills__title {
   width: 52rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .skills__title h1 {
@@ -586,18 +587,19 @@ main .sections .section {
 }
 
 .skills__button {
-  margin-top: 5.5rem;
+  margin-top: 4rem;
 }
 
 .skills__img__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 2rem 2rem;
 }
 
 .skills__img__item {
@@ -612,10 +614,13 @@ main .sections .section {
           align-items: center;
   border-radius: 10px;
   background-color: #383E45;
-  width: 8rem;
-  height: 8rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+.skills__img__item img {
+  width: 6rem;
+  height: 6rem;
 }
 
 .works {

@@ -88,22 +88,22 @@
     }
 
     &__bottom {
+        width: 100%;
         margin-top: 8rem;
         display: flex;
         flex-direction: row;
-        justify-content: center;
         align-items: center;
+        justify-content: space-between;
 
         .item {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            width: 41.6rem;
             height: 12rem;
             background-color: #292B2E;
-            margin-right: 2rem;
             border-radius: 10px;
+            padding: 0 2rem;
 
             &__icon {
                 width: 6.5rem;
@@ -124,7 +124,7 @@
 
 
             &__content {
-                width: 16rem;
+                width: 25rem;
                 height: 7rem;
                 display: flex;
                 flex-direction: column;

@@ -12,7 +12,7 @@
 
     &__title {
         width: 52rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         
         h1 {
             color: $white;
@@ -32,14 +32,15 @@
     }
 
     &__button {
-        margin-top: 5.5rem;
+        margin-top: 4rem;
     }
 
     &__img {
         &__list {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             flex-wrap: wrap;
+            gap: 2rem 2rem;
         }
     
         &__item {
@@ -48,10 +49,13 @@
             align-items: center;
             border-radius: 10px;
             background-color: #383E45;
-            width: 8rem;
-            height: 8rem;
-            margin-right: 2rem;
-            margin-bottom: 2rem;
+            width: 10rem;
+            height: 10rem;
+
+            img {
+                width: 6rem;
+                height: 6rem;
+            }
         }
     }
 
