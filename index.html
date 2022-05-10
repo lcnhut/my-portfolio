@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhut Le Portfolio</title>
+    <link rel = "icon" href="./assets/favicon.png" type = "image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link
         rel="stylesheet"
@@ -14,7 +15,7 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container col-12">
             <div class="navbar">
                 <div class="navbar__logo col-1">
                     <a href="#">
@@ -33,17 +34,15 @@
                 </div>
             </div>
         </div>
-        
-        
     </header>
     
     <main>
-        <div class="sections">
-            <section class="section hero"> 
+        <div class="sections col-12">
+            <section class="section hero col-12"> 
                 <div class="hero__content">
                     <h3 class="animate__animated animate__bounceInLeft">Hi, I Am <u>Nhut Le</u> 👋</h3>
-                    <h1>Creative designer & Front-end developer</h1>
-                    <p>I design and code beautifully simple things, and I love what I do.</p>
+                    <h1 class="animate__animated animate__fadeInLeftBig animate__delay-1s">Creative designer & Front-end developer</h1>
+                    <p class="animate__animated animate__fadeInLeftBig animate__delay-1s">I design and code beautifully simple things, and I love what I do.</p>
                 </div>
 
                 <div class="hero__image">
@@ -90,7 +89,7 @@
                 </div>
             </section>
 
-            <section class="section about" id="about">
+            <section class="section about col-12" id="about">
                 <div class="about__img col-6">
                     <img src="./assets/about-img.svg" alt="">
                 </div>
@@ -109,7 +108,7 @@
                 </div>
             </section>
             
-            <section class="section skills" id="skills">
+            <section class="section skills col-12" id="skills">
                 <div class="skills__content col-7">
                     <div class="skills__header">
                         <div class="label--primary">
@@ -148,7 +147,7 @@
                 </div>
             </section>
 
-            <section class="section works" id="works">
+            <section class="section works col-12" id="works">
                 <div class="works__header">
                     <div class="label--primary">
                         <h3>My works</h3>
@@ -168,21 +167,51 @@
 
                 <div class="works__imgs">
                     <div class="imgs__item col-3">
-                        <div class="item__top"><img src="./assets/works-img-1.png" alt=""></div>
-                        <div class="item__bottom"><img src="./assets/works-img-2.png" alt=""></div>
+                        <div class="img__wrapper item__top">
+                            <img class="img" src="./assets/works-img-1.png" alt="">
+                            <div class="middle">
+                                <div class="text">Explore</div>
+                            </div>
+                        </div>
+                        <div class="img__wrapper item__bottom">
+                            <img class="img" src="./assets/works-img-2.png" alt="">
+                            <div class="middle">
+                                <div class="text">Explore</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="imgs__item col-3">
-                        <div class="item__top"><img src="./assets/works-img-3.png" alt=""></div>
-                        <div class="item__bottom"><img src="./assets/works-img-5.png" alt=""></div>
+                        <div class="img__wrapper item__top">
+                            <img class="img" src="./assets/works-img-3.png" alt="">
+                            <div class="middle">
+                                <div class="text">Explore</div>
+                            </div>
+                        </div>
+                        <div class="img__wrapper item__bottom">
+                            <img class="img" src="./assets/works-img-5.png" alt="">
+                            <div class="middle">
+                                <div class="text">Explore</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="imgs__item col-3">
-                        <div class="item__top"><img src="./assets/works-img-6.png" alt=""></div>
-                        <div class="item__bottom"><img src="./assets/works-img-4.png" alt=""></div>
+                        <div class="img__wrapper item__top">
+                            <img class="img" src="./assets/works-img-6.png" alt="">
+                            <div class="middle">
+                                <div class="text">Explore</div>
+                            </div>
+                        </div>
+                        <div class="img__wrapper item__bottom">
+                            <img class="img" src="./assets/works-img-4.png" alt="">
+                            <div class="middle">
+                                <div class="text">Explore</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
             
-            <section class="section testimonials" id="testionials">
+            <section class="section testimonials col-12" id="testionials">
                 <div class="testimonials__header">
                     <div class="label--primary">
                         <h3>testimonials</h3>
