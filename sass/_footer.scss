@@ -5,15 +5,17 @@ footer {
     display:flex;
     justify-content: center;
     align-items: center;
-    
-    p, i {
+
+    p {
         color: $white;
-        font-size: 2.2em;
-        margin-left: 0.5rem;
+        font-size: 2em;
+        margin-right: 0.5rem;
     }
+    
 
     span {
         color: $primary__color;
         font-weight: bold;
+        font-size: 2.5em;
     }
 }

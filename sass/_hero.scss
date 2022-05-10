@@ -56,7 +56,7 @@
         .item {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             width: 41.6rem;
             height: 12rem;
@@ -65,19 +65,19 @@
             border-radius: 10px;
 
             &__icon {
-                width: 50px;
-                height: 50px;
-                color: $primary__color;
-                font-size: 4rem;
-                border-radius: 50%;
+                width: 6.5rem;
+                height: 6.5rem;
+                border-radius: 10rem;
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                z-index: 999;
+                justify-content: center;
+                color: $primary__color;
+                background-color: rgba(255, 106, 0, 0.138);
+
 
                 i {
-                    color: $primary__color;
-                    font-size: 4rem;
+                    font-size: 3em;
+                    color: $primary__color
                 }
             }
 
@@ -100,6 +100,23 @@
                     line-height: 1.6;
                     color: $white;
                 }
+            }
+
+            &__explore {
+                width: 4rem;
+                height: 4rem;
+                font-size: 1.6em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10rem;
+                color: $primary__color
+            }
+
+            &__explore:hover {
+                cursor: pointer;
+                background-color: rgba(255, 106, 0, 0.138);
+                transition: background-color linear 0.2s;
             }
         }
     }

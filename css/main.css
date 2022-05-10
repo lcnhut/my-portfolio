@@ -372,9 +372,8 @@ main .sections .section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -386,26 +385,25 @@ main .sections .section {
 }
 
 .hero__bottom .item__icon {
-  width: 50px;
-  height: 50px;
-  color: #ff6b00;
-  font-size: 4rem;
-  border-radius: 50%;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 999;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ff6b00;
+  background-color: rgba(255, 106, 0, 0.138);
 }
 
 .hero__bottom .item__icon i {
+  font-size: 3em;
   color: #ff6b00;
-  font-size: 4rem;
 }
 
 .hero__bottom .item__content {
@@ -435,6 +433,30 @@ main .sections .section {
   font-size: 1.6em;
   line-height: 1.6;
   color: #fff;
+}
+
+.hero__bottom .item__explore {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10rem;
+  color: #ff6b00;
+}
+
+.hero__bottom .item__explore:hover {
+  cursor: pointer;
+  background-color: rgba(255, 106, 0, 0.138);
+  -webkit-transition: background-color linear 0.2s;
+  transition: background-color linear 0.2s;
 }
 
 .about {
@@ -744,13 +766,14 @@ footer {
           align-items: center;
 }
 
-footer p, footer i {
+footer p {
   color: #fff;
-  font-size: 2.2em;
-  margin-left: 0.5rem;
+  font-size: 2em;
+  margin-right: 0.5rem;
 }
 
 footer span {
   color: #ff6b00;
   font-weight: bold;
+  font-size: 2.5em;
 }
