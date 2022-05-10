@@ -339,17 +339,59 @@ main .sections .section {
 }
 
 .hero__image {
-  margin-top: 5rem;
+  width: 20rem;
+  height: 25rem;
+  background-color: transparent;
+  position: relative;
+  margin-bottom: 4rem;
+  overflow: hidden;
 }
 
-.hero__image img {
+.hero__image .circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 20rem;
   height: 20rem;
+  background-color: #ff6b00;
+  overflow: hidden;
   border-radius: 50%;
 }
 
+.hero__image .circle img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 25rem;
+}
+
+.hero__image img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 25rem;
+}
+
+.hero__image::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20rem;
+  height: 20rem;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 1;
+  -webkit-box-shadow: 0 100px 0 40px #212529;
+          box-shadow: 0 100px 0 40px #212529;
+}
+
 .hero__bottom {
-  margin-top: 13.6rem;
+  margin-top: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,7 +518,7 @@ main .sections .section {
 .about__img {
   width: 62rem;
   height: 60rem;
-  margin-right: 4rem;
+  padding-right: 4rem;
 }
 
 .about__img img {
@@ -498,7 +540,7 @@ main .sections .section {
 .about__content p {
   color: #fff;
   font-weight: normal;
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 
 .about__content__button {
@@ -540,7 +582,7 @@ main .sections .section {
 .skills__description p {
   color: #fff;
   font-weight: normal;
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 
 .skills__button {
@@ -670,18 +712,26 @@ main .sections .section {
 
 .works__imgs .img__wrapper {
   position: relative;
+  overflow: hidden;
+}
+
+.works__imgs .img__wrapper .img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .works__imgs .img__wrapper .middle {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .works__imgs .img__wrapper .middle .text {
@@ -691,8 +741,8 @@ main .sections .section {
 
 .works__imgs .img__wrapper:hover .img {
   opacity: 0.3;
-  -webkit-transition: opacity linear 0.3s;
-  transition: opacity linear 0.3s;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .works__imgs .img__wrapper:hover .middle {
@@ -788,7 +838,7 @@ main .sections .section {
 
 footer {
   width: 100%;
-  height: 15rem;
+  height: 10rem;
   background-color: #1C1C1C;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -799,6 +849,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10rem;
 }
 
 footer p {
