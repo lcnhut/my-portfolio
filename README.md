@@ -1,7 +1,7 @@
 # My first portfolio
 
 ### Check it out
-https://lcnhut.github.io/nhut-portfolio/
+https://lcnhut.github.io/my-portfolio/
 
 ### Design
 This is an open source design on figma.com that I inspire for this project:
