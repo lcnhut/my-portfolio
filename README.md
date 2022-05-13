@@ -1,4 +1,5 @@
-# My first portfolio
+<h1 align="center">My first portfolio</h1>
+
 ### Check it out
 https://lcnhut.github.io/my-portfolio/
 ### Design
