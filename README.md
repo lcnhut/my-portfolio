@@ -1,4 +1,5 @@
-# My first portfolio
+<h1 align="center">My first portfolio</h1>
+
 ### Check it out
 https://lcnhut.github.io/my-portfolio/
 ### Design
@@ -9,16 +10,16 @@ Source: https://www.figma.com/file/LI62tcuuABpF9lXgi6Lao0/Personal-portfolio-Web
 ### Recommendation config
 Build SASS to CSS:
 - Install VSCode extension: Live Sass Compiler.
-- Paste this config into your config.json file
+- Add this into your config.json file
   > "liveSassCompile.settings.formats": [
-        {
+       {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "/assets/css"
-        }
+            "savePath": "./assets/css"
+       }
     ],
-    "liveSassCompile.settings.autoprefix": [
+  > "liveSassCompile.settings.autoprefix": [
         "> 1%",
         "last 2 versions"
     ],
-    "liveSassCompile.settings.generateMap": false,
+  > "liveSassCompile.settings.generateMap": false,
