@@ -11,39 +11,64 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
     <header>
         <div class="container grid wide">
+            <!-- Navbar PC -->
             <div class="navbar">
-                <div class="navbar__logo col-2">
+                <div class="navbar__logo">
                     <a href="#">
-                        <img src="./assets/nfq-logo.svg" alt="">
+                        <img src="./assets/imgs/nfq-logo.svg" alt="">
                     </a>
                 </div>
-                <ul class="navbar__menu col-8">
+                <ul class="navbar__menu">
                     <li class="navbar__item"><a href="#">Home</a></li>
                     <li class="navbar__item"><a href="#about">About</a></li>
                     <li class="navbar__item"><a href="#skills">Skills</a></li>
                     <li class="navbar__item"><a href="#works">Works</a></li>
-                    <li class="navbar__item"><a href="#testionials">Testimonials</a></li>
+                    <li class="navbar__item"><a href="#testimonials">Testimonials</a></li>
                 </ul>
-                <div class="navbar__button col-2">
+                <div class="navbar__button">
                     <button class="button--primary">Hire me</button>
                 </div>
             </div>
         </div>
+
+
+        <!-- menu mobile -->
+        <div class="header-mobile">
+            <div class="navbar-mobile">
+                <div class="navbar-mobile__btn-open">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="navbar-mobile__btn-close">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <ul class="navbar-mobile__menu">
+                    <li class="navbar-mobile__item"><a href="#">Home</a></li>
+                    <li class="navbar-mobile__item"><a href="#about">About</a></li>
+                    <li class="navbar-mobile__item"><a href="#skills">Skills</a></li>
+                    <li class="navbar-mobile__item"><a href="#works">Works</a></li>
+                    <li class="navbar-mobile__item"><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
+    <div class="overplay"></div>
+
     
     <main>
         <div class="sections grid wide">
             <section class="section hero"> 
                 <div class="hero__image">
                     <div class="circle">
-                        <img src="./assets/avatar.png" alt="">  
+                        <img src="./assets/imgs/avatar.png" alt="">  
                     </div>
-                    <img src="./assets/avatar.png" alt="">  
+                    <img src="./assets/imgs/avatar.png" alt="">  
                 </div>
 
                 <div class="hero__content">
@@ -92,9 +117,10 @@
                 </div>
             </section>
 
-            <section class="section about" id="about">
+            <section class="section about" >
+                <div class="place__holder" id="about"></div>
                 <div class="about__img col-6">
-                    <img src="./assets/IMG_3004.png" alt="">
+                    <img src="./assets/imgs/IMG_3004.png" alt="">
                 </div>
 
                 <div class="about__content col-6">
@@ -111,7 +137,8 @@
                 </div>
             </section>
             
-            <section class="section skills" id="skills">
+            <section class="section skills" >
+                <div class="place__holder" id="skills"></div>
                 <div class="skills__content col-7">
                     <div class="skills__header">
                         <div class="label--primary">
@@ -136,24 +163,25 @@
 
                 <div class="skills__img col-5">
                     <div class="skills__img__list">
-                        <div class="skills__img__item"><img src="./assets/vscode-icons_file-type-html.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/vscode-icons_file-type-css.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/logos_javascript.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/logos_sass.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/bxl_tailwind-css.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/akar-icons_github-fill.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/logos_bootstrap.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/image 1.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/logos_typescript-icon.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/logos_figma.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/logo_react.svg" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/logo_antd.svg" alt=""></div>
+                        <div class="skills__img__item"><img src="./assets/imgs/vscode-icons_file-type-html.png" alt=""></div>
+                        <div class="skills__img__item"><img src="./assets/imgs/vscode-icons_file-type-css.png" alt=""></div>
+                        <div class="skills__img__item"><img src="./assets/imgs/logos_javascript.png" alt=""></div>
+                        <div class="skills__img__item"><img src="./assets/imgs/logos_sass.png" alt=""></div>
+                        <div class="skills__img__item"><img src="./assets/imgs/bxl_tailwind-css.png" alt=""></div>
+                        <div class="skills__img__item"><img src="./assets/imgs/akar-icons_github-fill.png" alt=""></div>
+                        <div class="skills__img__item"><img src="./assets/imgs/logos_bootstrap.png" alt=""></div>
+                        <div class="skills__img__item"><img src="./assets/imgs/image 1.png" alt=""></div>
+                        <div class="skills__img__item"><img src="./assets/imgs/logos_typescript-icon.png" alt=""></div>
+                        <div class="skills__img__item"><img src="./assets/imgs/logos_figma.png" alt=""></div>
+                        <div class="skills__img__item"><img src="./assets/imgs/logo_react.svg" alt=""></div>
+                        <div class="skills__img__item"><img src="./assets/imgs/logo_antd.svg" alt=""></div>
 
                     </div>
                 </div>
             </section>
 
-            <section class="section works" id="works">
+            <section class="section works" >
+                <div class="place__holder" id="works"></div>
                 <div class="works__header">
                     <div class="label--primary">
                         <h3>My works</h3>
@@ -174,27 +202,13 @@
                 <div class="works__imgs">
                     <div class="imgs__item">
                         <div class="img__wrapper">
-                            <img class="img" src="./assets/works-img-1.png" alt="">
+                            <img class="img" src="./assets/imgs/works-img-1.png" alt="">
                             <div class="middle">
                                 <div class="text">Explore</div>
                             </div>
                         </div>
                         <div class="img__wrapper">
-                            <img class="img" src="./assets/works-img-2.png" alt="">
-                            <div class="middle">
-                                <div class="text">Explore</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="imgs__item">
-                        <div class="img__wrapper">
-                            <img class="img" src="./assets/works-img-3.png" alt="">
-                            <div class="middle">
-                                <div class="text">Explore</div>
-                            </div>
-                        </div>
-                        <div class="img__wrapper">
-                            <img class="img" src="./assets/works-img-5.png" alt="">
+                            <img class="img" src="./assets/imgs/works-img-2.png" alt="">
                             <div class="middle">
                                 <div class="text">Explore</div>
                             </div>
@@ -202,13 +216,27 @@
                     </div>
                     <div class="imgs__item">
                         <div class="img__wrapper">
-                            <img class="img" src="./assets/works-img-6.png" alt="">
+                            <img class="img" src="./assets/imgs/works-img-3.png" alt="">
                             <div class="middle">
                                 <div class="text">Explore</div>
                             </div>
                         </div>
                         <div class="img__wrapper">
-                            <img class="img" src="./assets/works-img-4.png" alt="">
+                            <img class="img" src="./assets/imgs/works-img-5.png" alt="">
+                            <div class="middle">
+                                <div class="text">Explore</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgs__item">
+                        <div class="img__wrapper">
+                            <img class="img" src="./assets/imgs/works-img-6.png" alt="">
+                            <div class="middle">
+                                <div class="text">Explore</div>
+                            </div>
+                        </div>
+                        <div class="img__wrapper">
+                            <img class="img" src="./assets/imgs/works-img-4.png" alt="">
                             <div class="middle">
                                 <div class="text">Explore</div>
                             </div>
@@ -217,7 +245,8 @@
                 </div>
             </section>
             
-            <section class="section testimonials" id="testionials">
+            <section class="section testimonials" >
+                <div class="place__holder" id="testimonials"></div>
                 <div class="testimonials__header">
                     <div class="label--primary">
                         <h3>testimonials</h3>
@@ -234,7 +263,7 @@
                             <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsum incidunt ex consectetur illo quaerat reprehenderit voluptatibus inventore accusantium sint doloremque provident porro, non quod quia dolore neque ipsa repellat."</p>
                         </div>
                         <div class="bottom">
-                            <img src="./assets/avatar-default.png" alt="">
+                            <img src="./assets/imgs/avatar-default.png" alt="">
                             <div class="bottom__infor">
                                 <h3>Khoa Duong</h3>
                                 <p>Frontend developer</p>
@@ -246,7 +275,7 @@
                             <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsum incidunt ex consectetur illo quaerat reprehenderit voluptatibus inventore accusantium sint doloremque provident porro, non quod quia dolore neque ipsa repellat."</p>
                         </div>
                         <div class="bottom">
-                            <img src="./assets/avatar-default.png" alt="">
+                            <img src="./assets/imgs/avatar-default.png" alt="">
                             <div class="bottom__infor">
                                 <h3>Nguyen Dang</h3>
                                 <p>Frontend developer</p>
@@ -258,7 +287,7 @@
                             <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsum incidunt ex consectetur illo quaerat reprehenderit voluptatibus inventore accusantium sint doloremque provident porro, non quod quia dolore neque ipsa repellat."</p>
                         </div>
                         <div class="bottom">
-                            <img src="./assets/avatar-default.png" alt="">
+                            <img src="./assets/imgs/avatar-default.png" alt="">
                             <div class="bottom__infor">
                                 <h3>Thang Duong</h3>
                                 <p>Frontend developer</p>
@@ -266,7 +295,6 @@
                         </div>
                     </div>
                 </div>
-
             </section>
         </div>
     </main>

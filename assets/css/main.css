@@ -759,6 +759,17 @@ body {
   color: #ff6b00;
 }
 
+.overplay {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
 header {
   overflow: hidden;
   background-color: #333;
@@ -766,13 +777,12 @@ header {
   top: 0;
   right: 0;
   width: 100%;
-  height: 8rem;
   display: block;
   z-index: 999;
 }
 
 header .container {
-  height: 100%;
+  height: 8rem;
 }
 
 header .navbar {
@@ -861,20 +871,61 @@ header .navbar__button {
           justify-content: flex-end;
 }
 
-@media only screen and (max-width: 46.1875em) {
-  .hidden {
+header .header-mobile {
+  width: 100%;
+  height: 100%;
+}
+
+header .header-mobile .navbar-mobile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+header .header-mobile .navbar-mobile__btn-open {
+  height: 100%;
+  position: absolute;
+  font-size: 5rem;
+  color: #ff6b00;
+  left: 2rem;
+}
+
+header .header-mobile .navbar-mobile__btn-close {
+  position: absolute;
+  font-size: 5rem;
+  color: #ff6b00;
+  left: 2rem;
+}
+
+@media (max-width: 46.1875em) {
+  header .container {
+    display: none;
+  }
+  header .header-mobile .navbar-mobile {
+    display: block;
+    height: 100%;
+  }
+  header .header-mobile .navbar-mobile__btn-close {
+    display: none;
+  }
+  header .header-mobile .navbar-mobile__menu {
     display: none;
   }
 }
 
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-  .hidden {
+@media (max-width: 63.9375em) {
+  header .container {
     display: none;
   }
-}
-
-@media only screen and (min-width: 64em) {
-  .hidden {
+  header .header-mobile .navbar-mobile {
+    display: block;
+    height: 100%;
+  }
+  header .header-mobile .navbar-mobile__btn-close {
+    display: none;
+  }
+  header .header-mobile .navbar-mobile__menu {
     display: none;
   }
 }
@@ -885,18 +936,21 @@ main {
 
 main .sections {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10rem 0;
 }
 
 main .sections .section {
   width: 100%;
+  margin: 10rem 0;
+  position: relative;
+}
+
+main .sections .section:first-child {
+  margin-top: 18rem;
+}
+
+main .sections .place__holder {
+  position: absolute;
+  top: -12rem;
 }
 
 .hero {
@@ -913,7 +967,6 @@ main .sections .section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10rem;
 }
 
 .hero__content {

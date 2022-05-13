@@ -3,12 +3,20 @@ main {
 
     .sections {
         width: 100%;
-        display:flex;
-        flex-direction: column;
-        gap: 10rem 0;
 
         .section {
             width: 100%;
+            margin: 10rem 0;
+            position: relative;
+        }
+
+        .section:first-child {
+            margin-top: 18rem;
+        }
+
+        .place__holder {
+            position: absolute;
+            top: -12rem
         }
     }
 }
