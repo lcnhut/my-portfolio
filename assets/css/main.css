@@ -1654,6 +1654,20 @@ main .sections .place__holder {
   }
 }
 
+@media (max-width: 768px) {
+  .testimonials__title h1 {
+    font-size: 3.8em;
+  }
+  .testimonials__quotes {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .testimonials .quote__item {
+    padding: 2rem;
+  }
+}
+
 footer {
   width: 100%;
   height: 10rem;

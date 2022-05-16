@@ -70,3 +70,23 @@
         padding: 0 2rem;
     }
 }
+
+
+@media (max-width: 768px) {
+    .testimonials {
+        &__title {
+            h1 {
+                font-size: 3.8em;
+            }
+        }
+
+        &__quotes {
+            grid-template-columns: 1fr;
+            row-gap: 2rem;
+        }
+
+        .quote__item {
+            padding: 2rem;
+        }
+    }
+}
