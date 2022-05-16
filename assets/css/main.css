@@ -1119,6 +1119,32 @@ main .sections .place__holder {
   }
 }
 
+@media (max-width: 768px) {
+  .hero__content h1 {
+    font-size: 2.8em;
+  }
+  .hero__content p {
+    text-align: center;
+  }
+  .hero__bottom {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .hero__bottom .item {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .hero__bottom .item__icon {
+    width: 8rem;
+    height: 8rem;
+  }
+  .hero__bottom .item__explore {
+    width: 8rem;
+    height: 8rem;
+    font-size: 3em;
+  }
+}
+
 .about {
   width: 100%;
   display: -ms-grid;

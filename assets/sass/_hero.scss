@@ -201,8 +201,35 @@
 }
 }
 
-// PC: width >= 1024px
-@media only screen and (min-width: 64em) {
-    .desktop {
+// mobile width <= 768px
+@media (max-width: 768px) {
+    .hero {
+        &__content {
+            h1 {
+                font-size: 2.8em;
+            }
+            p {
+                text-align: center;
+            }
+        }
+
+        &__bottom {
+            grid-template-columns: 1fr;
+
+            .item {
+                justify-content: space-around;
+
+                &__icon {
+                    width: 8rem;
+                    height: 8rem;
+                }
+
+                &__explore {
+                    width: 8rem;
+                    height: 8rem;
+                    font-size: 3em;
+                }
+            }
+        }
     }
 }
