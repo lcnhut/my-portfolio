@@ -82,13 +82,18 @@ header {
     }
 
     .header-mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
         width: 100%;
         height: 100%;
+        display: none;
+
+
         .navbar-mobile {
-            position: relative;
             width: 100%;
             height: 100%;
-            display: none;
 
             &__btn-open {
                 height: 100%;
@@ -121,8 +126,72 @@ header {
 
 // mobile: width < 768px
 @media (max-width: 768px) {
-}
+    .container {
+        .navbar {
+            display: none;
+        }
+    }
+    .header-mobile {
+        display: block;
+        .navbar-mobile {
 
-// Tablet: width < 1024px
-@media (max-width: 1024px) {
+            &__menu {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                text-align: center;
+                background: #FFF;
+                opacity: 0;
+                z-index: -1;
+                visibility: hidden;
+                transition: all .375s;
+
+                &.is-open {
+                    opacity: 1;
+                    z-index: 100;
+                    visibility: visible;
+
+                    &::before {
+                        transform: skew(-14deg) translateX(0);
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: -15px;
+                    background: #FEDC2A;
+                    transform-origin: 0 0;
+                    transform: skew(-14deg) translateX(-120%);
+                    transition: all .275s .1s;
+                }
+
+                ul {
+                    display: inline-flex;
+                    flex-direction: column;
+                    height: 93%; /* Should be 100%, but we have a notice message :D */
+                    align-items: flex-end;
+                    justify-content: center;
+                    transform: translateX(-18%) skew(-16deg);
+
+                    li {
+                        display: block;
+                        margin: .5rem 0;
+                        text-align: right;
+                        transform: skew(16deg);
+
+                        a {
+                            opacity: 0;
+                            transform: translateY(-10px);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

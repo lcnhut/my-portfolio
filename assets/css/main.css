@@ -786,15 +786,18 @@ header .navbar__button {
 }
 
 header .header-mobile {
-  width: 100%;
-  height: 100%;
-}
-
-header .header-mobile .navbar-mobile {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   display: none;
+}
+
+header .header-mobile .navbar-mobile {
+  width: 100%;
+  height: 100%;
 }
 
 header .header-mobile .navbar-mobile__btn-open {
@@ -810,6 +813,84 @@ header .header-mobile .navbar-mobile__btn-close {
   font-size: 5rem;
   color: #ff6b00;
   left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container .navbar {
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+  }
+  .header-mobile .navbar-mobile__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: #FFF;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    -webkit-transition: all .375s;
+    transition: all .375s;
+  }
+  .header-mobile .navbar-mobile__menu.is-open {
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+  }
+  .header-mobile .navbar-mobile__menu.is-open::before {
+    -webkit-transform: skew(-14deg) translateX(0);
+            transform: skew(-14deg) translateX(0);
+  }
+  .header-mobile .navbar-mobile__menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -15px;
+    background: #FEDC2A;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: skew(-14deg) translateX(-120%);
+            transform: skew(-14deg) translateX(-120%);
+    -webkit-transition: all .275s .1s;
+    transition: all .275s .1s;
+  }
+  .header-mobile .navbar-mobile__menu ul {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 93%;
+    /* Should be 100%, but we have a notice message :D */
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translateX(-18%) skew(-16deg);
+            transform: translateX(-18%) skew(-16deg);
+  }
+  .header-mobile .navbar-mobile__menu ul li {
+    display: block;
+    margin: .5rem 0;
+    text-align: right;
+    -webkit-transform: skew(16deg);
+            transform: skew(16deg);
+  }
+  .header-mobile .navbar-mobile__menu ul li a {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
 }
 
 main {
