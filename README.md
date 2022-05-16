@@ -7,7 +7,7 @@ This is an open source design on figma.com that I inspire for this project:
 Source: https://www.figma.com/file/LI62tcuuABpF9lXgi6Lao0/Personal-portfolio-Website-landing-page-UX-UI-kit-(Community)?node-id=0%3A1
 
 
-### Recommendation config
+### Recommended config
 Build SASS to CSS:
 - Install VSCode extension: Live Sass Compiler.
 - Add this into your config.json file
