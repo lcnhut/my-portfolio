@@ -810,11 +810,14 @@ header .navbar__button--close {
     background-color: #333;
     padding: 4rem 0;
     text-align: center;
+    opacity: 0;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    z-index: 1;
   }
   .container .navbar__menu.active {
     left: 0;
+    opacity: 1;
   }
   .container .navbar__item {
     margin-top: 4.5rem;
@@ -834,14 +837,18 @@ header .navbar__button--close {
   .container .navbar__button--close.hide {
     display: none;
   }
-  .container .navbar .overlay.active {
+  .container .navbar__overlay {
     position: fixed;
     height: 100vh;
-    width: 100%;
+    width: 100vh;
     top: 0;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+  .container .navbar__overlay.active {
+    display: block;
   }
 }
 
