@@ -673,17 +673,6 @@ body {
   color: #ff6b00;
 }
 
-.overplay {
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: none;
-}
-
 header {
   overflow: hidden;
   background-color: #333;
@@ -697,6 +686,11 @@ header {
 
 header .container {
   height: 8rem;
+  width: 100%;
+  display: block;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header .navbar {
@@ -776,7 +770,7 @@ header .navbar__item a.active::after {
   opacity: 1;
 }
 
-header .navbar__button {
+header .navbar__button--hire {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -785,111 +779,69 @@ header .navbar__button {
           justify-content: flex-end;
 }
 
-header .header-mobile {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+header .navbar__button--close, header .navbar__button--open {
+  color: #ff6b00;
+  font-size: 3em;
+  cursor: pointer;
   display: none;
 }
 
-header .header-mobile .navbar-mobile {
-  width: 100%;
-  height: 100%;
-}
-
-header .header-mobile .navbar-mobile__btn-open {
-  height: 100%;
+header .navbar__button--close {
   position: absolute;
-  font-size: 5rem;
-  color: #ff6b00;
-  left: 2rem;
-}
-
-header .header-mobile .navbar-mobile__btn-close {
-  position: absolute;
-  font-size: 5rem;
-  color: #ff6b00;
-  left: 2rem;
+  right: 3rem;
 }
 
 @media (max-width: 768px) {
   .container .navbar {
+    padding: 0 3rem;
+  }
+  .container .navbar__menu, .container .navbar__button--hire {
     display: none;
   }
-  .header-mobile {
-    display: block;
-  }
-  .header-mobile .navbar-mobile__menu {
-    position: absolute;
+  .container .navbar__menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 40rem;
     top: 0;
+    left: -100%;
     right: 0;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    background: #FFF;
-    opacity: 0;
-    z-index: -1;
-    visibility: hidden;
-    -webkit-transition: all .375s;
-    transition: all .375s;
-  }
-  .header-mobile .navbar-mobile__menu.is-open {
-    opacity: 1;
-    z-index: 100;
-    visibility: visible;
-  }
-  .header-mobile .navbar-mobile__menu.is-open::before {
-    -webkit-transform: skew(-14deg) translateX(0);
-            transform: skew(-14deg) translateX(0);
-  }
-  .header-mobile .navbar-mobile__menu::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: -15px;
-    background: #FEDC2A;
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: skew(-14deg) translateX(-120%);
-            transform: skew(-14deg) translateX(-120%);
-    -webkit-transition: all .275s .1s;
-    transition: all .275s .1s;
-  }
-  .header-mobile .navbar-mobile__menu ul {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 93%;
-    /* Should be 100%, but we have a notice message :D */
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transform: translateX(-18%) skew(-16deg);
-            transform: translateX(-18%) skew(-16deg);
-  }
-  .header-mobile .navbar-mobile__menu ul li {
     display: block;
-    margin: .5rem 0;
-    text-align: right;
-    -webkit-transform: skew(16deg);
-            transform: skew(16deg);
+    background-color: #333;
+    padding: 4rem 0;
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
-  .header-mobile .navbar-mobile__menu ul li a {
-    opacity: 0;
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+  .container .navbar__menu.active {
+    left: 0;
+  }
+  .container .navbar__item {
+    margin-top: 4.5rem;
+  }
+  .container .navbar__item a {
+    font-size: 2.3em;
+  }
+  .container .navbar__button--open {
+    display: block;
+  }
+  .container .navbar__button--open.hide {
+    display: none;
+  }
+  .container .navbar__button--close {
+    display: block;
+  }
+  .container .navbar__button--close.hide {
+    display: none;
+  }
+  .container .navbar .overlay.active {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 

@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <div class="container grid wide">
+        <div class="container">
             <!-- Navbar PC -->
             <div class="navbar">
                 <div class="navbar__logo">
@@ -24,43 +24,26 @@
                     </a>
                 </div>
                 <ul class="navbar__menu">
+                    <div class="navbar__button--close">
+                        <i class="fas fa-times"></i>
+                    </div>
                     <li class="navbar__item"><a href="#">Home</a></li>
                     <li class="navbar__item"><a href="#about">About</a></li>
                     <li class="navbar__item"><a href="#skills">Skills</a></li>
                     <li class="navbar__item"><a href="#works">Works</a></li>
                     <li class="navbar__item"><a href="#testimonials">Testimonials</a></li>
                 </ul>
-                <div class="navbar__button">
+                <div class="overlay"></div>
+                <div class="navbar__button--open">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="navbar__button--hire">
                     <button class="button--primary">Hire me</button>
                 </div>
             </div>
         </div>
-
-
-        <!-- menu mobile -->
-        <div class="header-mobile">
-            <div class="navbar-mobile">
-                <div class="navbar-mobile__btn-open">
-                    <i class="fas fa-bars"></i>
-                </div>
-
-                <div class="navbar-mobile__btn-close">
-                    <i class="fas fa-times"></i>
-                </div>
-
-                <ul class="navbar-mobile__menu">
-                    <li class="navbar-mobile__item"><a href="#">Home</a></li>
-                    <li class="navbar-mobile__item"><a href="#about">About</a></li>
-                    <li class="navbar-mobile__item"><a href="#skills">Skills</a></li>
-                    <li class="navbar-mobile__item"><a href="#works">Works</a></li>
-                    <li class="navbar-mobile__item"><a href="#testimonials">Testimonials</a></li>
-                </ul>
-            </div>
-        </div>
     </header>
-
-    <div class="overplay"></div>
-    
+        
     <main>
         <div class="sections">
             <section class="section hero"> 
