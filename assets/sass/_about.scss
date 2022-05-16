@@ -1,8 +1,7 @@
 .about {
     width: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     &__img {
         width: 60rem;
@@ -41,6 +40,10 @@
         }
 
     }
+}
 
-
+@media (max-width: 1024px) {
+    .about {
+        padding: 0 2rem;
+    }
 }

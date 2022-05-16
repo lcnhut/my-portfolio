@@ -121,36 +121,8 @@ header {
 
 // mobile: width < 768px
 @media (max-width: 768px) {
-    // header {
-    //     .container {
-    //         display: none;
-    //     }
-
-    //     .header-mobile {
-    //         .navbar-mobile {
-    //             display: block;
-    //             height: 100%;
-
-    //             &__btn-open {
-            
-    //             }
-    
-    //             &__btn-close {
-    //                 display: none;
-    //             }
-    
-    //             &__menu {
-    //                 display: none;
-    //             }
-    
-    //             &__item {
-    
-    //             }
-    //         }
-    //     }
-    // }
 }
 
 // Tablet: width < 1024px
-@media (max-width: 63.9375em) {
+@media (max-width: 1024px) {
 }

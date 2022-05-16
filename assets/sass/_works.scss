@@ -57,14 +57,15 @@
 
     &__imgs {
         width: 100%;
-        display:flex;
-        justify-content: center;
-        gap: 1.2rem;
-
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        column-gap: 1.2rem;
 
         .img__wrapper {
             display: flex;
             margin-bottom: 1.2rem;
+            border-radius: 2px;
             position: relative;
             overflow: hidden;
 
@@ -103,6 +104,26 @@
                 opacity: 1;
                 transition: opacity linear 0.3s;
             }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .works {
+        &__imgs {
+            padding: 0 2rem;
+            .img {
+                &__item {
+                    place-self: center;
+                }
+
+                &__wrapper {
+                    margin-bottom: 2rem;
+                    .img {
+                        max-width: 31rem;
+                    }
+                }
+            }  
         }
     }
 }

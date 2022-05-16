@@ -1081,15 +1081,10 @@ main .sections .place__holder {
 
 .about {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
 .about__img {
@@ -1125,16 +1120,17 @@ main .sections .place__holder {
   margin-top: 5.5rem;
 }
 
+@media (max-width: 1024px) {
+  .about {
+    padding: 0 2rem;
+  }
+}
+
 .skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
 }
 
 .skills__header {
@@ -1198,6 +1194,61 @@ main .sections .place__holder {
 .skills__img__item img {
   width: 6rem;
   height: 6rem;
+}
+
+@media (max-width: 1024px) {
+  .skills {
+    padding: 0 2rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "content" "img";
+    row-gap: 3rem;
+  }
+  .skills__content {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: content;
+    place-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills__title {
+    width: 100%;
+  }
+  .skills__description {
+    text-align: center;
+  }
+  .skills__button {
+    margin-top: 2rem;
+  }
+  .skills__img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: img;
+  }
+  .skills__img__list {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .skills__img__item {
+    grid-area: skill;
+    width: 12rem;
+    height: 12rem;
+  }
 }
 
 .works {
@@ -1276,13 +1327,14 @@ main .sections .place__holder {
 
 .works__imgs {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1.2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-column-gap: 1.2rem;
+          column-gap: 1.2rem;
 }
 
 .works__imgs .img__wrapper {
@@ -1290,6 +1342,7 @@ main .sections .place__holder {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.2rem;
+  border-radius: 2px;
   position: relative;
   overflow: hidden;
 }
@@ -1331,8 +1384,22 @@ main .sections .place__holder {
   transition: opacity linear 0.3s;
 }
 
+@media (max-width: 1024px) {
+  .works__imgs {
+    padding: 0 2rem;
+  }
+  .works__imgs .img__item {
+    place-self: center;
+  }
+  .works__imgs .img__wrapper {
+    margin-bottom: 2rem;
+  }
+  .works__imgs .img__wrapper .img {
+    max-width: 31rem;
+  }
+}
+
 .testimonials {
-  width: 1234px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1360,18 +1427,16 @@ main .sections .place__holder {
 }
 
 .testimonials__quotes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 5rem;
+          column-gap: 5rem;
 }
 
 .testimonials__quotes .quote__item {
-  height: 45rem;
+  height: 100%;
   background-color: #fff;
   border-radius: 10px;
   padding: 5rem 2.5rem;
@@ -1413,6 +1478,12 @@ main .sections .place__holder {
 
 .testimonials__quotes .quote__item .bottom__infor p {
   font-size: 1.6em;
+}
+
+@media (max-width: 1024px) {
+  .testimonials {
+    padding: 0 2rem;
+  }
 }
 
 footer {
