@@ -10,7 +10,11 @@
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
+        />
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
@@ -38,7 +42,7 @@
                     <div class="navbar__button--open" for="navbar__input--overlay">
                         <i class="fas fa-bars"></i>
                     </div>
-                    
+
                 <div class="navbar__button--hire">
                     <button class="button--primary">Hire me</button>
                 </div>
@@ -228,6 +232,36 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="works__imgs--swiper swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./assets/imgs/works-img-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/imgs/works-img-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/imgs/works-img-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/imgs/works-img-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/imgs/works-img-6.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/imgs/works-img-4.png" alt="">
+                        </div>
+                      </div>
+                      <!-- If we need pagination -->
+                      <div class="swiper-pagination"></div>
+                    
+                      <!-- If we need navigation buttons -->
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                </div>
             </section>
             
             <section class="section testimonials" >
@@ -292,6 +326,7 @@
         </p>
         <span>Le Chanh Nhut</span>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/javascript/main.js"></script>
 </body>
 </html>

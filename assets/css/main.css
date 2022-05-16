@@ -1429,7 +1429,7 @@ main .sections .place__holder {
   font-weight: 600;
   font-size: 1.6em;
   color: #fff;
-  margin-right: 2rem;
+  margin: 0 1rem;
   padding: 0.7rem 2rem;
 }
 
@@ -1509,6 +1509,10 @@ main .sections .place__holder {
   transition: opacity linear 0.3s;
 }
 
+.works__imgs--swiper {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .works__imgs {
     padding: 0 2rem;
@@ -1521,6 +1525,45 @@ main .sections .place__holder {
   }
   .works__imgs .img__wrapper .img {
     max-width: 31rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .works__title h1 {
+    font-size: 3.8em;
+  }
+  .works__imgs {
+    display: none;
+  }
+  .works__imgs--swiper {
+    width: 60rem;
+    height: 40rem;
+    display: block;
+    overflow: hidden;
+  }
+  .works__imgs--swiper .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .works__imgs--swiper .swiper-slide img {
+    max-width: 50rem;
+    max-height: 30rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .works__imgs--swiper .swiper-button-prev, .works__imgs--swiper .swiper-button-next {
+    color: #ff6b00;
+  }
+  .works__imgs--swiper .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ff6b00;
   }
 }
 

@@ -34,7 +34,7 @@
                 font-weight: 600;
                 font-size: 1.6em;
                 color: $white;
-                margin-right: 2rem;
+                margin: 0 1rem;
                 padding: 0.7rem 2rem;
             }
 
@@ -105,6 +105,10 @@
                 transition: opacity linear 0.3s;
             }
         }
+
+        &--swiper {
+            display: none;
+        }
     }
 }
 
@@ -124,6 +128,59 @@
                     }
                 }
             }  
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .works {
+        &__title {
+            h1 {
+                font-size: 3.8em;
+            }
+        }
+
+        &__menu {
+
+        }
+
+        &__imgs {
+            display: none;
+
+            &--swiper {
+                width: 60rem;
+                height: 40rem;
+                display: block;
+                overflow: hidden;
+
+                .swiper {
+                    &-slide {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+
+                        img {
+                            max-width: 50rem;
+                            max-height: 30rem;
+                            object-fit: contain;
+                        }
+                    }
+
+                    &-button {
+                        &-prev,
+                        &-next {
+                            color: $primary__color;
+                        }
+                    }
+
+                    &-pagination {
+                        .swiper-pagination-bullet-active {
+                            background-color: $primary__color;
+                        }
+                    }
+                }
+            }
         }
     }
 }
