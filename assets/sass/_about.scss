@@ -47,3 +47,34 @@
         padding: 0 2rem;
     }
 }
+
+@media (max-width: 768px) {
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-areas: "text"
+        "img";
+        row-gap: 3rem;
+        justify-items: center;
+
+        &__img {
+            grid-area: img;
+        }
+
+        &__content {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            h1 {
+                font-size: 3.8em;
+                margin-bottom: 2rem;
+            }
+
+            &__button {
+                margin-top: 3rem;
+            }
+        }
+
+    }
+}
