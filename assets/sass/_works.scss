@@ -140,15 +140,12 @@
             }
         }
 
-        &__menu {
-
-        }
-
         &__imgs {
             display: none;
 
             &--swiper {
-                width: 60rem;
+                max-width: 60rem;
+                width: 100%;
                 height: 40rem;
                 display: block;
                 overflow: hidden;
