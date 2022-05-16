@@ -1343,9 +1343,31 @@ main .sections .place__holder {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     gap: 4rem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skills__img__item {
+    grid-area: skill;
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills__content {
+    width: 100%;
+    max-width: 50rem;
+  }
+  .skills__title h1 {
+    font-size: 3.8rem;
+    text-align: center;
+  }
+  .skills__description {
+    width: 100%;
+  }
+  .skills__img__list {
+    gap: 2rem;
   }
   .skills__img__item {
     grid-area: skill;
