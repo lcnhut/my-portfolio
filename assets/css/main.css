@@ -791,6 +791,10 @@ header .navbar__button--close {
   right: 3rem;
 }
 
+header .navbar__overlay {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .container .navbar {
     padding: 0 3rem;
@@ -1156,15 +1160,18 @@ main .sections .place__holder {
 }
 
 .about__img {
-  width: 60rem;
-  height: 60rem;
-  padding-right: 4rem;
+  max-width: 60rem;
+  max-height: 60rem;
 }
 
 .about__img img {
   width: 100%;
   height: 100%;
   border-radius: 5rem;
+}
+
+.about__content {
+  padding: 0 2rem;
 }
 
 .about__content__header {
@@ -1206,9 +1213,8 @@ main .sections .place__holder {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: img;
-    width: 48rem;
-    height: 48rem;
-    padding-right: 0;
+    max-width: 48rem;
+    max-height: 48rem;
   }
   .about__img img {
     width: 100%;
@@ -1237,6 +1243,7 @@ main .sections .place__holder {
   }
   .about__content p {
     width: 100%;
+    text-align: center;
   }
   .about__content__button {
     margin-top: 3rem;

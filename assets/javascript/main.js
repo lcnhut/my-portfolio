@@ -22,6 +22,11 @@ items.forEach((item) => {
     menu.classList.remove("active");
     openBtn.classList.remove("hide");
     overlay.classList.remove("active");
+
+    // active menu item
+    const current = document.querySelectorAll("a.active");
+    current[0].classList.remove("active");
+    item.classList.add("active");
   };
 });
 

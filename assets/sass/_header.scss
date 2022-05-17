@@ -71,7 +71,6 @@ header {
 
             a.active {
                 color: $primary__color;
-
             }
 
             a.active::after{
@@ -99,6 +98,10 @@ header {
                 right: 3rem;
             }
 
+        }
+
+        &__overlay {
+            display: none;
         }
     }
 } 

@@ -4,9 +4,8 @@
     grid-template-columns: repeat(2, 1fr);
 
     &__img {
-        width: 60rem;
-        height: 60rem;
-        padding-right: 4rem;
+        max-width: 60rem;
+        max-height: 60rem;
 
         img {
             width: 100%;
@@ -16,6 +15,7 @@
     }
 
     &__content {
+        padding: 0 2rem;
 
         &__header {
             width: 14.8rem;
@@ -58,9 +58,8 @@
 
         &__img {
             grid-area: img;
-            width: 48rem;
-            height: 48rem;
-            padding-right: 0;
+            max-width: 48rem;
+            max-height: 48rem;
             
             img {
                 width: 100%;
@@ -83,6 +82,7 @@
 
             p {
                 width: 100%;
+                text-align: center;
             }
 
             &__button {
