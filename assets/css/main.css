@@ -878,7 +878,7 @@ main .sections .section:first-child {
 
 main .sections .place__holder {
   position: absolute;
-  top: -18rem;
+  top: -16rem;
 }
 
 @media (max-width: 768px) {
@@ -1160,6 +1160,7 @@ main .sections .place__holder {
     max-width: 50rem;
     -ms-grid-column-align: center;
         justify-self: center;
+    padding: 0 0.5rem;
   }
   .hero__bottom .item__icon {
     width: 8rem;
@@ -1168,6 +1169,21 @@ main .sections .place__holder {
   .hero__bottom .item__explore {
     width: 8rem;
     height: 8rem;
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__bottom .item {
+    max-width: 40rem;
+  }
+  .hero__bottom .item__icon {
+    width: 6rem;
+    height: 6rem;
+  }
+  .hero__bottom .item__explore {
+    width: 6rem;
+    height: 6rem;
     font-size: 3em;
   }
 }

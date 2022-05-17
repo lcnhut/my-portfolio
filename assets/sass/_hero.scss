@@ -216,6 +216,7 @@
                 width: 100%;
                 max-width: 50rem;
                 justify-self: center;
+                padding: 0 0.5rem;
 
                 &__icon {
                     width: 8rem;
@@ -225,6 +226,27 @@
                 &__explore {
                     width: 8rem;
                     height: 8rem;
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        &__bottom {
+            .item {
+                max-width: 40rem;
+
+                &__icon {
+                    width: 6rem;
+                    height: 6rem;
+                }
+
+                &__explore {
+                    width: 6rem;
+                    height: 6rem;
                     font-size: 3em;
                 }
             }
