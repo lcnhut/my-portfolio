@@ -86,7 +86,19 @@
         }
 
         .quote__item {
+            width: 100%;
+            max-width: 50rem;
             padding: 2rem;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonials {
+        &__title {
+            h1 {
+                font-size: 2.8em;
+            }
         }
     }
 }

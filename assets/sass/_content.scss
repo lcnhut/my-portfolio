@@ -1,5 +1,5 @@
 main {
-    margin: 8em 0;
+    margin: 8rem 0;
 
     .sections {
         width: 100%;
@@ -19,6 +19,28 @@ main {
         .place__holder {
             position: absolute;
             top: -18rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 4rem 0;
+    
+        .sections {
+            .section {
+                width: 100%;
+                margin: 5rem 0;
+                position: relative;
+            }
+    
+            .section:first-child {
+                margin-top: 10rem;
+            }
+
+            .place__holder {
+                top: -10rem;
+            }
         }
     }
 }

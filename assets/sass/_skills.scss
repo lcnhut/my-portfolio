@@ -2,9 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
 
-    &__content {
-    }
-
     &__header {
         width: 14.8rem;
     }
@@ -92,15 +89,17 @@
 
         &__img {
             grid-area: img;
+            justify-self: center;
 
             &__list {
+                max-width: 50rem;
+                display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                gap: 4rem;
+                // gap: 4rem;
                 justify-content: center;
             }
 
             &__item {
-                grid-area: skill;
                 width: 12rem;
                 height: 12rem;
             }
@@ -126,17 +125,34 @@
             width: 100%;
         }
 
-        &__img {
-
+        &__img {            
             &__list {
-                gap: 2rem;
-            }
-
-            &__item {
-                grid-area: skill;
-                width: 12rem;
-                height: 12rem;
+                // max-width: 50rem;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                // gap: 4rem;
+                justify-content: center;
             }
         }
     }
 } 
+
+@media (max-width: 576px) {
+    .skills {
+        &__title {
+            h1 {
+                font-size: 2.8em;
+            }
+        }
+        &__img {
+            &__list {
+                display: grid;
+            }
+
+            &__item {
+                width: 8rem;
+                height: 8rem;
+            }
+        }
+    }
+}

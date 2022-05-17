@@ -10,7 +10,7 @@
 
 
     &__title {
-        width: 52rem;
+        max-width: 52rem;
         margin-bottom: 3rem;
         text-align: center;
         
@@ -177,6 +177,23 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .works {
+        &__title {
+            h1 {
+                font-size: 2.8em;
+            }
+        }
+
+        &__menu {
+            .list__item {
+                padding: 0.5rem 1.2rem;
+                margin: 0 0.5rem;
             }
         }
     }

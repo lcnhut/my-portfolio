@@ -857,7 +857,7 @@ header .navbar__overlay {
 }
 
 main {
-  margin: 8em 0;
+  margin: 8rem 0;
 }
 
 main .sections {
@@ -878,7 +878,24 @@ main .sections .section:first-child {
 
 main .sections .place__holder {
   position: absolute;
-  top: -12rem;
+  top: -18rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 4rem 0;
+  }
+  main .sections .section {
+    width: 100%;
+    margin: 5rem 0;
+    position: relative;
+  }
+  main .sections .section:first-child {
+    margin-top: 10rem;
+  }
+  main .sections .place__holder {
+    top: -10rem;
+  }
 }
 
 .hero {
@@ -1139,6 +1156,10 @@ main .sections .place__holder {
   .hero__bottom .item {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    width: 100%;
+    max-width: 50rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .hero__bottom .item__icon {
     width: 8rem;
@@ -1235,7 +1256,7 @@ main .sections .place__holder {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    width: 48rem;
+    max-width: 48rem;
   }
   .about__content h1 {
     font-size: 3.8em;
@@ -1247,6 +1268,12 @@ main .sections .place__holder {
   }
   .about__content__button {
     margin-top: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about__content h1 {
+    font-size: 2.8em;
   }
 }
 
@@ -1359,17 +1386,20 @@ main .sections .place__holder {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: img;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .skills__img__list {
+    max-width: 50rem;
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-    gap: 4rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .skills__img__item {
-    grid-area: skill;
     width: 12rem;
     height: 12rem;
   }
@@ -1388,12 +1418,27 @@ main .sections .place__holder {
     width: 100%;
   }
   .skills__img__list {
-    gap: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills__title h1 {
+    font-size: 2.8em;
+  }
+  .skills__img__list {
+    display: -ms-grid;
+    display: grid;
   }
   .skills__img__item {
-    grid-area: skill;
-    width: 12rem;
-    height: 12rem;
+    width: 8rem;
+    height: 8rem;
   }
 }
 
@@ -1418,7 +1463,7 @@ main .sections .place__holder {
 }
 
 .works__title {
-  width: 52rem;
+  max-width: 52rem;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -1589,6 +1634,16 @@ main .sections .place__holder {
   }
 }
 
+@media (max-width: 576px) {
+  .works__title h1 {
+    font-size: 2.8em;
+  }
+  .works__menu .list__item {
+    padding: 0.5rem 1.2rem;
+    margin: 0 0.5rem;
+  }
+}
+
 .testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1686,7 +1741,15 @@ main .sections .place__holder {
     row-gap: 2rem;
   }
   .testimonials .quote__item {
+    width: 100%;
+    max-width: 50rem;
     padding: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials__title h1 {
+    font-size: 2.8em;
   }
 }
 

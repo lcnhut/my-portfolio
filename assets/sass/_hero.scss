@@ -160,13 +160,6 @@
     }
 }
 
-// tablet: width < 740px
-@media only screen and (max-width: 46.1875em) {
-    .mobile {
-    }
-}
-
-
 @media (max-width: 1042px) {
     .hero {
         &__bottom {
@@ -220,6 +213,9 @@
 
             .item {
                 justify-content: space-around;
+                width: 100%;
+                max-width: 50rem;
+                justify-self: center;
 
                 &__icon {
                     width: 8rem;
