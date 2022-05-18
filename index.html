@@ -1,333 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nhut Le Portfolio</title>
-    <link rel = "icon" href="./assets/imgs/favicon.png" type = "image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="icon" href="./assets/imgs/favicon.png" type="image/x-icon" />
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
     <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-        />
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <!-- Navbar PC -->
-            <div class="navbar">
-                <div class="navbar__logo">
-                    <a href="#">
-                        <img src="./assets/imgs/nfq-logo.svg" alt="">
-                    </a>
-                </div>
-                <ul class="navbar__menu">
-                    <div class="navbar__button--close">
-                        <i class="fas fa-times"></i>
-                    </div>
-                    <li class="navbar__item"><a class="active" href="#hero">Home</a></li>
-                    <li class="navbar__item"><a href="#about">About</a></li>
-                    <li class="navbar__item"><a href="#skills">Skills</a></li>
-                    <li class="navbar__item"><a href="#works">Works</a></li>
-                    <li class="navbar__item"><a href="#testimonials">Testimonials</a></li>
-                </ul>
-
-                <div class="navbar__overlay"></div>
-                    <div class="navbar__button--open" for="navbar__input--overlay">
-                        <i class="fas fa-bars"></i>
-                    </div>
-
-                <div class="navbar__button--hire">
-                    <button class="button--primary">Hire me</button>
-                </div>
+      <div class="container">
+        <!-- Navbar PC -->
+        <div class="navbar">
+          <div class="navbar__logo">
+            <a href="#">
+              <img src="./assets/imgs/nfq-logo.svg" alt="" />
+            </a>
+          </div>
+          <ul class="navbar__menu">
+            <div class="navbar__button--close">
+              <i class="fas fa-times"></i>
             </div>
+            <li class="navbar__item">
+              <a class="active" href="#hero">Home</a>
+            </li>
+            <li class="navbar__item"><a href="#about">About</a></li>
+            <li class="navbar__item"><a href="#skills">Skills</a></li>
+            <li class="navbar__item"><a href="#works">Works</a></li>
+            <li class="navbar__item">
+              <a href="#testimonials">Testimonials</a>
+            </li>
+          </ul>
+
+          <div class="navbar__overlay"></div>
+          <div class="navbar__button--open" for="navbar__input--overlay">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <div class="navbar__button--hire">
+            <button class="button--primary">Hire me</button>
+          </div>
         </div>
+      </div>
     </header>
-        
+
     <main>
-        <div class="sections">
-            <section class="section hero"> 
-                <div class="place__holder" id="hero"></div>
-                <div class="hero__image">
-                    <div class="circle">
-                        <img src="./assets/imgs/avatar.png" alt="">  
-                    </div>
-                    <img src="./assets/imgs/avatar.png" alt="">  
-                </div>
+      <div class="sections">
+        <section class="section hero">
+          <div class="place__holder" id="hero"></div>
+          <div class="hero__image">
+            <div class="circle">
+              <img src="./assets/imgs/avatar.png" alt="" />
+            </div>
+            <img src="./assets/imgs/avatar.png" alt="" />
+          </div>
 
-                <div class="hero__content">
-                    <h3 class="animate__animated animate__bounceInLeft desktop mobile tablet">Hi, I Am <u>Nhut Le</u> 👋</h3>
-                    <h1 class="animate__animated animate__fadeInLeftBig animate__delay-1s">Creative designer & Front-end developer</h1>
-                    <p class="animate__animated animate__fadeInLeftBig animate__delay-1s">I design and code beautifully simple things, and I love what I do.</p>
-                </div>
+          <div class="hero__content">
+            <h3
+              class="animate__animated animate__bounceInLeft desktop mobile tablet"
+            >
+              Hi, I Am <u>Nhut Le</u> 👋
+            </h3>
+            <h1
+              class="animate__animated animate__fadeInLeftBig animate__delay-1s"
+            >
+              Creative designer & Front-end developer
+            </h1>
+            <p
+              class="animate__animated animate__fadeInLeftBig animate__delay-1s"
+            >
+              I design and code beautifully simple things, and I love what I do.
+            </p>
+          </div>
 
-                <div class="hero__bottom">
-                    <div class="item">
-                        <div class="item__icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="item__content">
-                            <h1>1+</h1>
-                            <p>Years experience</p>
-                        </div>
-                        <div class="item__explore">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__icon">
-                            <i class="fas fa-check"></i>
-                        </div>
-                        <div class="item__content">
-                            <h1>10+</h1>
-                            <p>Completed Projects</p>
-                        </div>
-                        <div class="item__explore">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="item__content">
-                            <h1>5+</h1>
-                            <p>Happy Clients</p>
-                        </div>
-                        <div class="item__explore">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <div class="hero__bottom">
+            <div class="item">
+              <div class="item__icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="item__content">
+                <h1>1+</h1>
+                <p>Years experience</p>
+              </div>
+              <div class="item__explore">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="item__content">
+                <h1>10+</h1>
+                <p>Completed Projects</p>
+              </div>
+              <div class="item__explore">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="item__content">
+                <h1>5+</h1>
+                <p>Happy Clients</p>
+              </div>
+              <div class="item__explore">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <section class="section about">
-                <div class="place__holder" id="about"></div>
-                <div class="about__img">
-                    <img src="./assets/imgs/IMG_3004.png" alt="">
-                </div>
+        <section class="section about">
+          <div class="place__holder" id="about"></div>
+          <div class="about__img">
+            <img src="./assets/imgs/IMG_3004.png" alt="" />
+          </div>
 
-                <div class="about__content">
-                    <div class="about__content__header">
-                        <div class="label--primary">
-                            <h3>Who I Am</h3>
-                        </div>
-                    </div>
-                    <h1>About me</h1>
-                    <p>Lorem ipsum dolor sit ametlibero voluptas vel nihil aperiam alias rem unde quae quam fuga commodi quod suscipit illo repellat placeat accusantium?</p>
-                    <div class="about__content__button">
-                        <button class="button--primary">Hire me</button>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="section skills">
-                <div class="place__holder" id="skills"></div>
-                <div class="skills__content">
-                    <div class="skills__header">
-                        <div class="label--primary">
-                            <h3>My skills</h3>
-                        </div>
-                    </div>
-                    <div class="skills__title">
-                        <h1>What My Programming
-                            Skills Included?</h1>
-                    </div>
+          <div class="about__content">
+            <div class="about__content__header">
+              <div class="label--primary">
+                <h3>Who I Am</h3>
+              </div>
+            </div>
+            <h1>About me</h1>
+            <p>
+              Lorem ipsum dolor sit ametlibero voluptas vel nihil aperiam alias
+              rem unde quae quam fuga commodi quod suscipit illo repellat
+              placeat accusantium?
+            </p>
+            <div class="about__content__button">
+              <button class="button--primary">Hire me</button>
+            </div>
+          </div>
+        </section>
 
-                    <div class="skills__description">
-                        <p>
-                            I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.
-                        </p>
-                    </div>
+        <section class="section skills">
+          <div class="place__holder" id="skills"></div>
+          <div class="skills__content">
+            <div class="skills__header">
+              <div class="label--primary">
+                <h3>My skills</h3>
+              </div>
+            </div>
+            <div class="skills__title">
+              <h1>What My Programming Skills Included?</h1>
+            </div>
 
-                    <div class="skills__button">
-                        <button class="button--primary">Hire Me</button>
-                    </div>
-                </div>
+            <div class="skills__description">
+              <p>
+                I develop simple, intuitive and responsive user interface that
+                helps users get things done with less effort and time with those
+                technologies.
+              </p>
+            </div>
 
-                <div class="skills__img">
-                    <div class="skills__img__list">
-                        <div class="skills__img__item"><img src="./assets/imgs/vscode-icons_file-type-html.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/imgs/vscode-icons_file-type-css.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/imgs/logos_javascript.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/imgs/logos_sass.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/imgs/bxl_tailwind-css.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/imgs/akar-icons_github-fill.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/imgs/logos_bootstrap.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/imgs/image 1.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/imgs/logos_typescript-icon.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/imgs/logos_figma.png" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/imgs/logo_react.svg" alt=""></div>
-                        <div class="skills__img__item"><img src="./assets/imgs/logo_antd.svg" alt=""></div>
+            <div class="skills__button">
+              <button class="button--primary">Hire Me</button>
+            </div>
+          </div>
 
-                    </div>
-                </div>
-            </section>
+          <div class="skills__img">
+            <div class="skills__img__list">
+              <div class="skills__img__item">
+                <img
+                  src="./assets/imgs/vscode-icons_file-type-html.png"
+                  alt=""
+                />
+              </div>
+              <div class="skills__img__item">
+                <img
+                  src="./assets/imgs/vscode-icons_file-type-css.png"
+                  alt=""
+                />
+              </div>
+              <div class="skills__img__item">
+                <img src="./assets/imgs/logos_javascript.png" alt="" />
+              </div>
+              <div class="skills__img__item">
+                <img src="./assets/imgs/logos_sass.png" alt="" />
+              </div>
+              <div class="skills__img__item">
+                <img src="./assets/imgs/bxl_tailwind-css.png" alt="" />
+              </div>
+              <div class="skills__img__item">
+                <img src="./assets/imgs/akar-icons_github-fill.png" alt="" />
+              </div>
+              <div class="skills__img__item">
+                <img src="./assets/imgs/logos_bootstrap.png" alt="" />
+              </div>
+              <div class="skills__img__item">
+                <img src="./assets/imgs/image 1.png" alt="" />
+              </div>
+              <div class="skills__img__item">
+                <img src="./assets/imgs/logos_typescript-icon.png" alt="" />
+              </div>
+              <div class="skills__img__item">
+                <img src="./assets/imgs/logos_figma.png" alt="" />
+              </div>
+              <div class="skills__img__item">
+                <img src="./assets/imgs/logo_react.svg" alt="" />
+              </div>
+              <div class="skills__img__item">
+                <img src="./assets/imgs/logo_antd.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <section class="section works" >
-                <div class="place__holder" id="works"></div>
-                <div class="works__header">
-                    <div class="label--primary">
-                        <h3>My works</h3>
-                    </div>
-                </div>
-                <div class="works__title">
-                    <h1>My projects</h1>
-                </div>
+        <section class="section works">
+          <div class="place__holder" id="works"></div>
+          <div class="works__header">
+            <div class="label--primary">
+              <h3>My works</h3>
+            </div>
+          </div>
+          <div class="works__title">
+            <h1>My projects</h1>
+          </div>
 
-                <div class="works__menu">
-                    <div class="list">
-                        <div class="list__item active">All</div>
-                        <div class="list__item">Web development</div>
-                        <div class="list__item">Web design</div>
-                    </div>
-                </div>
+          <div class="works__menu">
+            <div class="list">
+              <div class="list__item active">All</div>
+              <div class="list__item">Web development</div>
+              <div class="list__item">Web design</div>
+            </div>
+          </div>
 
-                <div class="works__imgs">
-                    <div class="img__item">
-                        <div class="img__wrapper">
-                            <img class="img" src="./assets/imgs/works-img-1.png" alt="">
-                            <div class="middle">
-                                <div class="text">Explore</div>
-                            </div>
-                        </div>
-                        <div class="img__wrapper">
-                            <img class="img" src="./assets/imgs/works-img-2.png" alt="">
-                            <div class="middle">
-                                <div class="text">Explore</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img__item">
-                        <div class="img__wrapper">
-                            <img class="img" src="./assets/imgs/works-img-3.png" alt="">
-                            <div class="middle">
-                                <div class="text">Explore</div>
-                            </div>
-                        </div>
-                        <div class="img__wrapper">
-                            <img class="img" src="./assets/imgs/works-img-5.png" alt="">
-                            <div class="middle">
-                                <div class="text">Explore</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img__item">
-                        <div class="img__wrapper">
-                            <img class="img" src="./assets/imgs/works-img-6.png" alt="">
-                            <div class="middle">
-                                <div class="text">Explore</div>
-                            </div>
-                        </div>
-                        <div class="img__wrapper">
-                            <img class="img" src="./assets/imgs/works-img-4.png" alt="">
-                            <div class="middle">
-                                <div class="text">Explore</div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="works__imgs">
+            <div class="img__item">
+              <div class="img__wrapper">
+                <img class="img" src="./assets/imgs/works-img-1.png" alt="" />
+                <div class="middle">
+                  <div class="text">Explore</div>
                 </div>
+              </div>
+              <div class="img__wrapper">
+                <img class="img" src="./assets/imgs/works-img-2.png" alt="" />
+                <div class="middle">
+                  <div class="text">Explore</div>
+                </div>
+              </div>
+            </div>
+            <div class="img__item">
+              <div class="img__wrapper">
+                <img class="img" src="./assets/imgs/works-img-3.png" alt="" />
+                <div class="middle">
+                  <div class="text">Explore</div>
+                </div>
+              </div>
+              <div class="img__wrapper">
+                <img class="img" src="./assets/imgs/works-img-5.png" alt="" />
+                <div class="middle">
+                  <div class="text">Explore</div>
+                </div>
+              </div>
+            </div>
+            <div class="img__item">
+              <div class="img__wrapper">
+                <img class="img" src="./assets/imgs/works-img-6.png" alt="" />
+                <div class="middle">
+                  <div class="text">Explore</div>
+                </div>
+              </div>
+              <div class="img__wrapper">
+                <img class="img" src="./assets/imgs/works-img-4.png" alt="" />
+                <div class="middle">
+                  <div class="text">Explore</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="works__imgs--swiper swiper">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="./assets/imgs/works-img-1.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/imgs/works-img-3.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/imgs/works-img-5.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/imgs/works-img-2.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/imgs/works-img-6.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/imgs/works-img-4.png" alt="">
-                        </div>
-                      </div>
-                      <!-- If we need pagination -->
-                      <div class="swiper-pagination"></div>
-                    
-                      <!-- If we need navigation buttons -->
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
-                </div>
-            </section>
-            
-            <section class="section testimonials" >
-                <div class="place__holder" id="testimonials"></div>
-                <div class="testimonials__header">
-                    <div class="label--primary">
-                        <h3>testimonials</h3>
-                    </div>
-                </div>
+          <div class="works__imgs--swiper swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./assets/imgs/works-img-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/works-img-3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/works-img-5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/works-img-2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/works-img-6.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/works-img-4.png" alt="" />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-                <div class="testimonials__title">
-                    <h1>What colleagues says</h1>
-                </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
 
-                <div class="testimonials__quotes">
-                    <div class="quote__item">
-                        <div class="description">
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsum incidunt ex consectetur illo quaerat reprehenderit voluptatibus inventore accusantium sint doloremque provident porro, non quod quia dolore neque ipsa repellat."</p>
-                        </div>
-                        <div class="bottom">
-                            <img src="./assets/imgs/avatar-default.png" alt="">
-                            <div class="bottom__infor">
-                                <h3>Khoa Duong</h3>
-                                <p>Frontend developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quote__item">
-                        <div class="description">
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsum incidunt ex consectetur illo quaerat reprehenderit voluptatibus inventore accusantium sint doloremque provident porro, non quod quia dolore neque ipsa repellat."</p>
-                        </div>
-                        <div class="bottom">
-                            <img src="./assets/imgs/avatar-default.png" alt="">
-                            <div class="bottom__infor">
-                                <h3>Nguyen Dang</h3>
-                                <p>Frontend developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quote__item">
-                        <div class="description">
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsum incidunt ex consectetur illo quaerat reprehenderit voluptatibus inventore accusantium sint doloremque provident porro, non quod quia dolore neque ipsa repellat."</p>
-                        </div>
-                        <div class="bottom">
-                            <img src="./assets/imgs/avatar-default.png" alt="">
-                            <div class="bottom__infor">
-                                <h3>Thang Duong</h3>
-                                <p>Frontend developer</p>
-                            </div>
-                        </div>
-                    </div>
+        <section class="section testimonials">
+          <div class="place__holder" id="testimonials"></div>
+          <div class="testimonials__header">
+            <div class="label--primary">
+              <h3>testimonials</h3>
+            </div>
+          </div>
+
+          <div class="testimonials__title">
+            <h1>What colleagues says</h1>
+          </div>
+
+          <div class="testimonials__quotes">
+            <div class="quote__item">
+              <div class="description">
+                <p>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Velit ipsum incidunt ex consectetur illo quaerat reprehenderit
+                  voluptatibus inventore accusantium sint doloremque provident
+                  porro, non quod quia dolore neque ipsa repellat."
+                </p>
+              </div>
+              <div class="bottom">
+                <img src="./assets/imgs/avatar-default.png" alt="" />
+                <div class="bottom__infor">
+                  <h3>Khoa Duong</h3>
+                  <p>Frontend developer</p>
                 </div>
-            </section>
-        </div>
+              </div>
+            </div>
+            <div class="quote__item">
+              <div class="description">
+                <p>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Velit ipsum incidunt ex consectetur illo quaerat reprehenderit
+                  voluptatibus inventore accusantium sint doloremque provident
+                  porro, non quod quia dolore neque ipsa repellat."
+                </p>
+              </div>
+              <div class="bottom">
+                <img src="./assets/imgs/avatar-default.png" alt="" />
+                <div class="bottom__infor">
+                  <h3>Nguyen Dang</h3>
+                  <p>Frontend developer</p>
+                </div>
+              </div>
+            </div>
+            <div class="quote__item">
+              <div class="description">
+                <p>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Velit ipsum incidunt ex consectetur illo quaerat reprehenderit
+                  voluptatibus inventore accusantium sint doloremque provident
+                  porro, non quod quia dolore neque ipsa repellat."
+                </p>
+              </div>
+              <div class="bottom">
+                <img src="./assets/imgs/avatar-default.png" alt="" />
+                <div class="bottom__infor">
+                  <h3>Thang Duong</h3>
+                  <p>Frontend developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
-        <p>
-            copyright 
-            <i class="far fa-copyright"></i>
-            2022 by
-        </p>
-        <span>Le Chanh Nhut</span>
+      <p>
+        copyright
+        <i class="far fa-copyright"></i>
+        2022 by
+      </p>
+      <span>Le Chanh Nhut</span>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/javascript/main.js"></script>
-</body>
+  </body>
 </html>
