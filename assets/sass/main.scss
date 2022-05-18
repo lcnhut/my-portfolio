@@ -1,64 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import "./var";
 @import "./grid";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
-
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-    background-color: $dark__grey;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  background-color: $dark__grey;
 }
-
 
 .button--primary {
-    text-transform: capitalize;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: $text__color;
-    padding: 1.2rem 1.4rem;
-    border-radius: 50px;
-    background-color: $primary__color
-};
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: $text__color;
+  padding: 1.2rem 1.4rem;
+  border-radius: 50px;
+  background-color: $primary__color;
+}
 
 .button--primary:hover {
-    cursor: pointer;
-    background-color: $hover__color;
-    color: $white;
-    transform: scale(1.05);
-    transition: color linear 0.2s, transform linear 0.2s, background-color linear 0.2s;
+  cursor: pointer;
+  background-color: $hover__color;
+  color: $white;
+  transform: scale(1.05);
+  transition: color linear 0.2s, transform linear 0.2s,
+    background-color linear 0.2s;
 }
-
 
 .label--primary {
-    width: 100%;
-    height: 4.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
+  width: 100%;
+  height: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
 
-    h3 {
-        font-size: 2em;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: $primary__color;
-    }
+  h3 {
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $primary__color;
+  }
 }
-
-
 
 @import "./header";
 @import "./content";

@@ -1,185 +1,181 @@
 header {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    right: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: block;
+  z-index: 999;
+
+  .container {
+    height: 8rem;
     width: 100%;
     display: block;
-    z-index: 999;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
+  .navbar {
+    height: 100%;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .container {
-        height: 8rem;
-        width: 100%;
+    &__logo {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &__menu {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+    }
+
+    &__item {
+      margin: 0 3rem;
+
+      a {
+        font-size: 1.8em;
+        text-decoration: none;
+        color: $white;
+        text-transform: capitalize;
+        position: relative;
+        letter-spacing: 0.05em;
+      }
+
+      a::after {
+        position: absolute;
+        opacity: 0;
+        background: $primary__color;
+        width: 0;
+        height: 0.3rem;
+        content: "";
+        z-index: 1;
+        bottom: -0.35rem;
+        left: 0;
         display: block;
-        padding: 0;
-        max-width: 1200px;
-        margin: 0 auto;
+        transition: 0.3s;
+      }
+
+      a:hover::after {
+        width: 100%;
+        opacity: 1;
+        transition: opacity linear 0.3, width linear 0.3s;
+      }
+
+      a.active {
+        color: $primary__color;
+      }
+
+      a.active::after {
+        width: 100%;
+        opacity: 1;
+      }
     }
 
-    .navbar {
-        height: 100%;
-        font-weight: 600;
+    &__button {
+      &--hire {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: flex-end;
+      }
 
-        &__logo {
-            display: flex;
-            justify-content: flex-start;
-        }
+      &--close,
+      &--open {
+        color: $primary__color;
+        font-size: 3em;
+        cursor: pointer;
+        display: none;
+      }
 
-        &__menu {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-        }
-
-        &__item {
-            margin: 0 3rem;
-
-            a {
-                font-size: 1.8em;
-                text-decoration: none;
-                color: $white;
-                text-transform: capitalize;
-                position: relative;
-                letter-spacing: 0.05em;
-            }
-
-            a::after {
-                position: absolute;
-                opacity: 0;
-                background: $primary__color;
-                width: 0;
-                height: 0.3rem;
-                content: "";
-                z-index: 1;
-                bottom: -0.35rem;
-                left: 0;
-                display: block;
-                transition: 0.3s;
-            }
-
-            a:hover::after {
-                width: 100%;
-                opacity: 1;
-                transition: opacity linear 0.3, width linear 0.3s;
-            }
-
-
-            a.active {
-                color: $primary__color;
-            }
-
-            a.active::after{
-                width: 100%;
-                opacity: 1;
-            }
-        }
-
-        &__button {
-            &--hire {
-                display: flex;
-                justify-content: flex-end;
-            }
-
-            &--close,
-            &--open {
-                color: $primary__color;
-                font-size: 3em;
-                cursor: pointer;
-                display: none;
-            }
-
-            &--close {
-                position: absolute;
-                right: 3rem;
-            }
-
-        }
-
-        &__overlay {
-            display: none;
-        }
+      &--close {
+        position: absolute;
+        right: 3rem;
+      }
     }
-} 
 
+    &__overlay {
+      display: none;
+    }
+  }
+}
 
 //--------------Responsive-----------------------
 
 // mobile: width < 768px
 @media (max-width: 768px) {
-    .container {
-        .navbar {
-            padding: 0 3rem;
-            
-            &__menu,
-            &__button--hire {
-                display: none;
-            }
+  .container {
+    .navbar {
+      padding: 0 3rem;
 
-            &__menu {
-                position: fixed;
-                height: 100vh;
-                width: 100%;
-                max-width: 40rem;
-                top: 0;
-                left: -100%;
-                right: 0;
-                display: block;
-                background-color: #333;
-                padding: 4rem 0;
-                text-align: center;
-                opacity: 0;
-                transition: all 0.3s ease;
-                z-index: 1;
+      &__menu,
+      &__button--hire {
+        display: none;
+      }
 
-                &.active {
-                    left: 0;
-                    opacity: 1;
-                }
-            }
+      &__menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 40rem;
+        top: 0;
+        left: -100%;
+        right: 0;
+        display: block;
+        background-color: #333;
+        padding: 4rem 0;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease;
+        z-index: 1;
 
-            &__item {
-                margin-top: 4.5rem;
-
-                a {
-                    font-size: 2.3em;
-                }
-            }
-
-            &__button {
-                &--open {
-                    display: block;
-                    &.hide {
-                        display: none;
-                    }
-                }
-
-                &--close {
-                    display: block;
-                    &.hide {
-                        display: none;
-                    }
-                }
-            }
-
-            &__overlay {   
-                position: fixed;
-                height: 100vh;
-                width: 100vh;
-                top: 0;
-                left: 0;
-                right: 0;
-                background-color: rgba(0, 0, 0, 0.3);
-                display: none;
-
-                &.active {
-                    display: block;
-                }
-            }
+        &.active {
+          left: 0;
+          opacity: 1;
         }
+      }
+
+      &__item {
+        margin-top: 4.5rem;
+
+        a {
+          font-size: 2.3em;
+        }
+      }
+
+      &__button {
+        &--open {
+          display: block;
+          &.hide {
+            display: none;
+          }
+        }
+
+        &--close {
+          display: block;
+          &.hide {
+            display: none;
+          }
+        }
+      }
+
+      &__overlay {
+        position: fixed;
+        height: 100vh;
+        width: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
     }
+  }
 }

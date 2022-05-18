@@ -1,50 +1,49 @@
 main {
-    margin: 8rem 0;
+  margin: 8rem 0;
 
-    .sections {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
+  .sections {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 
-        .section {
-            width: 100%;
-            margin: 10rem 0;
-            position: relative;
-        }
-
-        .section:first-child {
-            margin-top: 18rem;
-        }
-
-        .place__holder {
-            position: absolute;
-            top: -16rem;
-        }
+    .section {
+      width: 100%;
+      margin: 10rem 0;
+      position: relative;
     }
+
+    .section:first-child {
+      margin-top: 18rem;
+    }
+
+    .place__holder {
+      position: absolute;
+      top: -16rem;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-    main {
-        margin: 4rem 0;
-    
-        .sections {
-            .section {
-                width: 100%;
-                margin: 5rem 0;
-                position: relative;
-            }
-    
-            .section:first-child {
-                margin-top: 10rem;
-            }
+  main {
+    margin: 4rem 0;
 
-            .place__holder {
-                top: -10rem;
-            }
-        }
+    .sections {
+      .section {
+        width: 100%;
+        margin: 5rem 0;
+        position: relative;
+      }
+
+      .section:first-child {
+        margin-top: 10rem;
+      }
+
+      .place__holder {
+        top: -10rem;
+      }
     }
+  }
 }
-
 
 @import "./hero";
 @import "./about";
