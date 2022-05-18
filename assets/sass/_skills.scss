@@ -1,13 +1,15 @@
 .skills {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 3fr 2fr;
 
   &__header {
-    width: 14.8rem;
+    width: 100%;
+    max-width: 14.8rem;
   }
 
   &__title {
-    width: 52rem;
+    width: 100%;
+    max-width: 52rem;
     margin-bottom: 2rem;
 
     h1 {
@@ -19,7 +21,8 @@
   }
 
   &__description {
-    width: 67rem;
+    width: 100%;
+    max-width: 67rem;
     p {
       color: $white;
       font-weight: normal;
@@ -33,13 +36,16 @@
 
   &__img {
     &__list {
-      display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      gap: 2rem 2rem;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
     }
 
     &__item {
+      place-self: center;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -76,6 +82,10 @@
 
     &__title {
       width: 100%;
+      h1 {
+        font-size: 4em;
+        text-align: center;
+      }
     }
 
     &__description {
@@ -92,10 +102,7 @@
 
       &__list {
         max-width: 50rem;
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
-        // gap: 4rem;
-        justify-content: center;
       }
 
       &__item {
@@ -126,9 +133,7 @@
 
     &__img {
       &__list {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
       }
     }
   }
@@ -142,10 +147,6 @@
       }
     }
     &__img {
-      &__list {
-        display: grid;
-      }
-
       &__item {
         width: 10rem;
         height: 10rem;

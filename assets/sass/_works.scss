@@ -73,6 +73,7 @@
         transform: scale(1);
         -webkit-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out;
+        width: 100%;
       }
 
       .middle {
@@ -111,6 +112,32 @@
   }
 }
 
+// Responsive
+@media (max-width: 1200px) {
+  .works {
+    &__title {
+      h1 {
+        font-size: 4em;
+      }
+    }
+
+    &__imgs {
+      .img {
+        &__item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &__wrapper {
+          margin-bottom: 3.8rem;
+          max-width: 90%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .works {
     &__imgs {
@@ -121,7 +148,6 @@
         }
 
         &__wrapper {
-          margin-bottom: 2rem;
           .img {
             max-width: 31rem;
           }
