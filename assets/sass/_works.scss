@@ -110,6 +110,88 @@
       display: none;
     }
   }
+
+  /* The Modal (background) */
+  &__modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999999999999999999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+
+    /* Modal Content (image) */
+    &-content {
+      position: absolute;
+      margin: auto;
+      display: block;
+      width: 100%;
+      max-width: 50rem;
+    }
+
+    /* Add Animation */
+    &-content,
+    #caption {
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+    @-webkit-keyframes zoom {
+      from {
+        -webkit-transform: scale(0);
+      }
+      to {
+        -webkit-transform: scale(1);
+      }
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+    /* The Close Button */
+    &-close {
+      position: absolute;
+      top: 3.5rem;
+      right: 4.5rem;
+      color: #f1f1f1;
+      font-size: 6rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    &-close:hover,
+    &-close:focus {
+      color: $primary__color;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
 }
 
 // Responsive

@@ -56,6 +56,11 @@
 @media (max-width: 1024px) {
   .about {
     padding: 0 2rem;
+
+    &__img {
+      max-width: 52rem;
+      max-height: 52rem;
+    }
   }
 }
 

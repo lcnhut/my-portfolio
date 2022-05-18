@@ -1165,7 +1165,7 @@ main .sections .place__holder {
   }
 }
 
-@media (max-width: 1042px) {
+@media (max-width: 1024px) {
   .hero__bottom {
     -webkit-column-gap: 0rem;
             column-gap: 0rem;
@@ -1213,6 +1213,9 @@ main .sections .place__holder {
   .hero__bottom .item__icon {
     max-width: 8rem;
     max-height: 8rem;
+  }
+  .hero__bottom .item__icon i {
+    font-size: 3em;
   }
   .hero__bottom .item__explore {
     max-width: 8rem;
@@ -1291,6 +1294,10 @@ main .sections .place__holder {
 @media (max-width: 1024px) {
   .about {
     padding: 0 2rem;
+  }
+  .about__img {
+    max-width: 52rem;
+    max-height: 52rem;
   }
 }
 
@@ -1523,6 +1530,7 @@ main .sections .place__holder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* The Modal (background) */
 }
 
 .works__header {
@@ -1645,6 +1653,101 @@ main .sections .place__holder {
 
 .works__imgs--swiper {
   display: none;
+}
+
+.works__modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 999999999999999999;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Modal Content (image) */
+  /* Add Animation */
+  /* Caption of Modal Image */
+  /* The Close Button */
+}
+
+.works__modal-content {
+  position: absolute;
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 50rem;
+}
+
+.works__modal-content,
+.works__modal #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.works__modal #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.works__modal-close {
+  position: absolute;
+  top: 3.5rem;
+  right: 4.5rem;
+  color: #f1f1f1;
+  font-size: 6rem;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.works__modal-close:hover, .works__modal-close:focus {
+  color: #ff6b00;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {

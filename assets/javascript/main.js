@@ -84,3 +84,28 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+// Modal images
+// Get the modal
+const modal = document.getElementById("works_modal");
+const exploreButtons = document.querySelectorAll(".text");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+const imgs = document.querySelectorAll("#myImg");
+const modalImg = document.getElementById("img01");
+const captionText = document.getElementById("caption");
+
+exploreButtons.forEach((item, index) => {
+  item.onclick = function () {
+    modal.style.display = "flex";
+    modalImg.src = imgs[index].src;
+  };
+});
+
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName("works__modal-close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};

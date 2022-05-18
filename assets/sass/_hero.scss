@@ -201,7 +201,7 @@
   }
 }
 
-@media (max-width: 1042px) {
+@media (max-width: 1024px) {
   .hero {
     &__bottom {
       column-gap: 0rem;
@@ -257,6 +257,9 @@
         &__icon {
           max-width: 8rem;
           max-height: 8rem;
+          i {
+            font-size: 3em;
+          }
         }
 
         &__explore {
