@@ -105,6 +105,28 @@ header {
 
 //--------------Responsive-----------------------
 
+@media (max-width: 1200px) {
+  header {
+    .container {
+      max-width: 100rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    .container {
+      max-width: 75rem;
+
+      .navbar {
+        &__item {
+          margin: 0 1.5rem;
+        }
+      }
+    }
+  }
+}
+
 // mobile: width < 768px
 @media (max-width: 768px) {
   .container {

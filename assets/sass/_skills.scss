@@ -126,10 +126,8 @@
 
     &__img {
       &__list {
-        // max-width: 50rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        // gap: 4rem;
         justify-content: center;
       }
     }
@@ -149,8 +147,8 @@
       }
 
       &__item {
-        width: 8rem;
-        height: 8rem;
+        width: 10rem;
+        height: 10rem;
       }
     }
   }

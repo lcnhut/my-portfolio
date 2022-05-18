@@ -26,12 +26,14 @@
       font-size: 4.8em;
       font-weight: bold;
       margin-bottom: 3rem;
+      text-transform: capitalize;
     }
 
     p {
       color: $white;
       font-weight: normal;
       font-size: 1.8em;
+      text-transform: capitalize;
     }
 
     &__button {
