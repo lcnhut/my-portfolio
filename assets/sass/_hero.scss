@@ -174,11 +174,9 @@
       }
     }
     &__bottom {
-      column-gap: 0rem;
+      column-gap: 1.5rem;
 
       .item {
-        margin: 0 1.5rem;
-
         &__icon {
           max-width: 5rem;
           max-height: 5rem;
@@ -204,9 +202,6 @@
 @media (max-width: 1024px) {
   .hero {
     &__bottom {
-      column-gap: 0rem;
-      row-gap: 3rem;
-
       .item {
         &__icon {
           max-width: 5rem;
@@ -222,8 +217,8 @@
         }
 
         &__explore {
-          max-width: 3.5rem;
-          max-height: 3.5rem;
+          max-width: 5rem;
+          max-height: 5rem;
         }
       }
     }
@@ -246,6 +241,7 @@
     &__bottom {
       grid-template-columns: 1fr;
       margin-top: 4rem;
+      row-gap: 2rem;
 
       .item {
         justify-content: space-around;

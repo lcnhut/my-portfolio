@@ -9,15 +9,18 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10rem;
+    max-width: 120rem;
+    margin: 0 auto;
+
     .banner {
-      width: 111.6rem;
+      width: 120rem;
       height: 17.4rem;
       border-radius: 1.5rem;
       background-color: $primary__color;
       padding: 0 8rem;
       display: grid;
       grid-template-columns: 3fr 4fr 2fr;
+      column-gap: 2rem;
       justify-content: center;
       align-items: center;
       transform: translateY(-50%);
@@ -27,7 +30,7 @@ footer {
         h1 {
           font-size: 4em;
           font-weight: bold;
-          color: $text__color;
+          color: #f5fbf2;
         }
       }
 
@@ -38,7 +41,7 @@ footer {
           text-align: center;
           font-size: 2em;
           font-weight: 500;
-          color: $text__color;
+          color: #f5fbf2;
         }
       }
 
@@ -48,20 +51,20 @@ footer {
         justify-content: center;
         align-items: center;
         button {
-          color: $text__color;
+          color: $primary__color;
           font-size: 2em;
           font-weight: 500;
           padding: 1.5rem 4rem;
-          border: 2px solid $text__color;
+          border: 2px solid #f5fbf2;
           border-radius: 5rem;
-          background-color: transparent;
+          background-color: #f5fbf2;
           cursor: pointer;
         }
 
         button:hover {
-          color: $primary__color;
-          background-color: $text__color;
-          border-color: $primary__color;
+          color: #f5fbf2;
+          background-color: $primary__color;
+          border-color: #f5fbf2;
           transition: all 0.2s linear;
         }
       }
@@ -69,7 +72,7 @@ footer {
 
     .information {
       width: 100%;
-      margin-bottom: 10rem;
+      margin-bottom: 8rem;
       &__list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -127,8 +130,9 @@ footer {
           }
 
           &__input {
-            width: 30rem;
-            padding: 1.5rem 8rem 1.5rem 2.2rem;
+            max-width: 30rem;
+            width: 100%;
+            padding: 1.5rem 7rem 1.5rem 2.2rem;
             font-weight: normal;
             font-size: 1.6em;
             line-height: 2.2em;
@@ -140,7 +144,7 @@ footer {
           }
 
           &__icon {
-            width: 6.5rem;
+            width: 9.45rem;
             height: 6.5rem;
             display: flex;
             align-items: center;
@@ -157,7 +161,7 @@ footer {
             }
 
             &:hover {
-              background-color: #212529;
+              background-color: #f5fbf2;
               border: 1px solid $primary__color;
 
               i {
@@ -167,17 +171,167 @@ footer {
           }
         }
       }
-      // p {
-      //   color: $white;
-      //   font-size: 2em;
-      //   margin-right: 0.5rem;
-      // }
+    }
+  }
+}
 
-      // span {
-      //   color: $primary__color;
-      //   font-weight: bold;
-      //   font-size: 2.5em;
-      // }
+@media (max-width: 1200px) {
+  footer {
+    .footer {
+      max-width: 100rem;
+
+      .banner {
+        max-width: 100rem;
+        width: 100%;
+        padding: 0 4rem;
+        &__title {
+          h1 {
+            font-size: 3.5em;
+          }
+        }
+
+        &__description {
+          p {
+            font-size: 1.8em;
+          }
+        }
+
+        &__button {
+          button {
+            font-size: 1.8em;
+            padding: 1.2rem 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    .footer {
+      padding: 0 2rem;
+      .banner {
+        width: 100%;
+        padding: 0 2rem;
+        &__title {
+          h1 {
+            font-size: 3em;
+          }
+        }
+
+        &__description {
+          p {
+            font-size: 1.7em;
+          }
+        }
+
+        &__button {
+          button {
+            font-size: 1.7em;
+            padding: 1rem 2rem;
+          }
+        }
+      }
+
+      .information {
+        &__list {
+          grid-template-columns: repeat(2, 50%);
+          justify-content: center;
+        }
+
+        &__item {
+          .letter {
+            &__icon {
+              width: 6.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .footer {
+      .banner {
+        height: 13rem;
+        width: 100%;
+        max-width: 50rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+        &__title {
+          h1 {
+            font-size: 2.6em;
+            text-align: center;
+          }
+        }
+
+        &__description {
+          display: none;
+        }
+
+        &__button {
+          button {
+            font-size: 1.8em;
+            padding: 1.2rem 2.5rem;
+          }
+        }
+      }
+
+      .information {
+        &__item {
+          margin-top: 2rem;
+          padding-left: 2rem;
+        }
+        .letter__input {
+          width: 25rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    .footer {
+      .banner {
+        height: 10rem;
+        width: 40rem;
+        &__button {
+          button {
+            padding: 1.2rem 1.1rem;
+          }
+        }
+      }
+      .information {
+        .letter {
+          &__box {
+            flex-direction: column;
+          }
+          &__input {
+            width: 18rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem 2rem;
+          }
+
+          &__icon {
+            width: 18rem;
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  footer {
+    .footer {
+      .banner {
+        max-width: 30rem;
+      }
     }
   }
 }

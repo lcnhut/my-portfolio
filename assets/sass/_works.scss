@@ -212,8 +212,7 @@
         }
 
         &__wrapper {
-          margin-bottom: 3.8rem;
-          max-width: 90%;
+          max-width: 100%;
         }
       }
     }
@@ -301,6 +300,25 @@
       .list__item {
         padding: 0.5rem 1.2rem;
         margin: 0 0.5rem;
+      }
+    }
+
+    &__imgs {
+      &--swiper {
+        max-width: 60rem;
+        width: 100%;
+        height: 40rem;
+        display: block;
+        overflow: hidden;
+
+        .swiper {
+          &-slide {
+            img {
+              max-width: 30rem;
+              max-height: 30rem;
+            }
+          }
+        }
       }
     }
   }

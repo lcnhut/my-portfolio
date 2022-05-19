@@ -103,11 +103,16 @@
       &__list {
         max-width: 50rem;
         grid-template-columns: repeat(4, 1fr);
+        gap: 5rem;
       }
 
       &__item {
-        width: 12rem;
-        height: 12rem;
+        width: 13rem;
+        height: 13rem;
+        img {
+          width: 7rem;
+          height: 7rem;
+        }
       }
     }
   }
@@ -147,9 +152,22 @@
       }
     }
     &__img {
+      &__list {
+        gap: 3rem;
+      }
       &__item {
         width: 10rem;
         height: 10rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .skills {
+    &__img {
+      &__list {
+        gap: 1.5rem;
       }
     }
   }
