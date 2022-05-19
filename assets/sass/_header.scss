@@ -117,6 +117,7 @@ header {
   header {
     .container {
       max-width: 100%;
+      padding: 0 2.5rem;
 
       .navbar {
         &__item {
@@ -132,8 +133,6 @@ header {
   header {
     .container {
       .navbar {
-        padding: 0 3rem;
-
         &__menu,
         &__button--hire {
           display: none;

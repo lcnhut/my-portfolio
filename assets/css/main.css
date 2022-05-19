@@ -805,6 +805,7 @@ header .navbar__overlay {
 @media (max-width: 1024px) {
   header .container {
     max-width: 100%;
+    padding: 0 2.5rem;
   }
   header .container .navbar__item {
     margin: 0 1.5rem;
@@ -812,9 +813,6 @@ header .navbar__overlay {
 }
 
 @media (max-width: 768px) {
-  header .container .navbar {
-    padding: 0 3rem;
-  }
   header .container .navbar__menu, header .container .navbar__button--hire {
     display: none;
   }
@@ -1164,6 +1162,9 @@ main .sections .place__holder {
 }
 
 @media (max-width: 1024px) {
+  .hero__bottom {
+    padding: 0 2rem;
+  }
   .hero__bottom .item__icon {
     max-width: 5rem;
     max-height: 5rem;
@@ -1521,6 +1522,14 @@ main .sections .place__holder {
 @media (max-width: 425px) {
   .skills__img__list {
     gap: 1.5rem;
+  }
+  .skills__img__item {
+    width: 8rem;
+    height: 8rem;
+  }
+  .skills__img__item img {
+    width: 6rem;
+    height: 6rem;
   }
 }
 
@@ -2274,18 +2283,21 @@ footer .footer .information__item .letter__icon:hover i {
   footer .footer .banner__button button {
     padding: 1.2rem 1.1rem;
   }
-  footer .footer .information .letter__box {
+  footer .footer .information__item .letter__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
-  footer .footer .information .letter__input {
+  footer .footer .information__item .letter__input {
     width: 18rem;
     margin-bottom: 2rem;
     padding: 1.5rem 2rem;
   }
-  footer .footer .information .letter__icon {
+  footer .footer .information__item .letter__icon {
     width: 18rem;
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -2295,5 +2307,22 @@ footer .footer .information__item .letter__icon:hover i {
 @media (max-width: 425px) {
   footer .footer .banner {
     max-width: 30rem;
+  }
+  footer .footer .information__list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer .footer .information__item {
+    text-align: center;
+    padding-left: 0;
+  }
+  footer .footer .information__item .letter__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }

@@ -169,6 +169,15 @@
       &__list {
         gap: 1.5rem;
       }
+
+      &__item {
+        width: 8rem;
+        height: 8rem;
+        img {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
     }
   }
 }
