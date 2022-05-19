@@ -109,3 +109,6 @@ const span = document.getElementsByClassName("works__modal-close")[0];
 span.onclick = function () {
   modal.style.display = "none";
 };
+
+// Animations
+AOS.init();
