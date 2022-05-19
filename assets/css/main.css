@@ -1954,16 +1954,24 @@ footer {
   width: 100%;
   height: 100%;
   background-color: #1c1c1c;
+  margin-top: 17.4rem;
+}
+
+footer .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 17.4rem;
+  padding: 0 10rem;
 }
 
 footer .footer .banner {
@@ -2036,6 +2044,122 @@ footer .footer .banner__button button:hover {
   color: #ff6b00;
   background-color: #2f445d;
   border-color: #ff6b00;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+footer .footer .information {
+  width: 100%;
+  margin-bottom: 10rem;
+}
+
+footer .footer .information__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+footer .footer .information__item h1 {
+  font-size: 3.2em;
+  color: #ff6b00;
+  margin-bottom: 3.5rem;
+  font-weight: 700;
+}
+
+footer .footer .information__item p {
+  font-size: 1.8em;
+  text-transform: capitalize;
+  color: #d4d4d4;
+  font-weight: 600;
+}
+
+footer .footer .information__item h2 {
+  color: #fff;
+  font-size: 2.2em;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+footer .footer .information__item li {
+  list-style-type: none;
+}
+
+footer .footer .information__item li a {
+  text-decoration: none;
+  font-size: 1.8em;
+  line-height: 2.3em;
+  color: #7b7b7b;
+  font-weight: 500;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+footer .footer .information__item li a:hover {
+  color: #ff6b00;
+}
+
+footer .footer .information__item p.letter__text {
+  font-size: 1.8em;
+  line-height: 2.3em;
+  color: #7b7b7b;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+footer .footer .information__item .letter__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer .information__item .letter__input {
+  width: 30rem;
+  padding: 1.5rem 8rem 1.5rem 2.2rem;
+  font-weight: normal;
+  font-size: 1.6em;
+  line-height: 2.2em;
+  border-radius: 5rem;
+  background-color: #212529;
+  color: #7b7b7b;
+  outline: none;
+  border: none;
+}
+
+footer .footer .information__item .letter__icon {
+  width: 6.5rem;
+  height: 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ff6b00;
+  border-radius: 5rem;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+footer .footer .information__item .letter__icon i {
+  font-size: 2.2em;
+  color: #212529;
+}
+
+footer .footer .information__item .letter__icon:hover {
+  background-color: #212529;
+  border: 1px solid #ff6b00;
+}
+
+footer .footer .information__item .letter__icon:hover i {
+  color: #ff6b00;
 }
