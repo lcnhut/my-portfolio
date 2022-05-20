@@ -2275,6 +2275,12 @@ footer .footer .information__item .letter__icon:hover i {
   }
 }
 
+@media (max-width: 680px) {
+  footer .footer .information__item .letter__input {
+    width: 20rem;
+  }
+}
+
 @media (max-width: 576px) {
   footer .footer .banner {
     height: 10rem;

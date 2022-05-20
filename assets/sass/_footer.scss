@@ -293,6 +293,22 @@ footer {
   }
 }
 
+@media (max-width: 680px) {
+  footer {
+    .footer {
+      .information {
+        &__item {
+          .letter {
+            &__input {
+              width: 20rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 576px) {
   footer {
     .footer {
