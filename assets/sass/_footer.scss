@@ -241,6 +241,8 @@ footer {
         }
 
         &__item {
+          margin-top: 2rem;
+          padding-left: 2rem;
           .letter {
             &__icon {
               width: 6.5rem;
@@ -252,7 +254,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   footer {
     .footer {
       .banner {

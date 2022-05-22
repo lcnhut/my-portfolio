@@ -812,7 +812,7 @@ header .navbar__overlay {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   header .container .navbar__menu, header .container .navbar__button--hire {
     display: none;
   }
@@ -901,7 +901,7 @@ main .sections .place__holder {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   main {
     margin: 4rem 0;
   }
@@ -1182,7 +1182,7 @@ main .sections .place__holder {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .hero__content h1 {
     font-size: 2.8em;
     text-align: center;
@@ -1273,7 +1273,6 @@ main .sections .place__holder {
   color: #fff;
   font-weight: normal;
   font-size: 1.8em;
-  text-transform: capitalize;
 }
 
 .about__content__button {
@@ -1296,7 +1295,7 @@ main .sections .place__holder {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .about {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1488,7 +1487,7 @@ main .sections .place__holder {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .skills__content {
     width: 100%;
     max-width: 50rem;
@@ -1800,7 +1799,7 @@ main .sections .place__holder {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .works__title h1 {
     font-size: 3.8em;
   }
@@ -1955,7 +1954,7 @@ main .sections .place__holder {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .testimonials__title h1 {
     font-size: 3.8em;
   }
@@ -2241,12 +2240,16 @@ footer .footer .information__item .letter__icon:hover i {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  footer .footer .information__item {
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
   footer .footer .information__item .letter__icon {
     width: 6.5rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   footer .footer .banner {
     height: 13rem;
     width: 100%;

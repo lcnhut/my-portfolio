@@ -33,7 +33,6 @@
       color: $white;
       font-weight: normal;
       font-size: 1.8em;
-      text-transform: capitalize;
     }
 
     &__button {
@@ -64,7 +63,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .about {
     grid-template-columns: 1fr;
     grid-template-areas:
