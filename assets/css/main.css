@@ -1110,6 +1110,7 @@ main .sections .place__holder {
   line-height: 1.6;
   color: #fff;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .hero__bottom .item__explore {
